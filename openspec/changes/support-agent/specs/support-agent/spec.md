@@ -9,9 +9,9 @@ The support agent SHALL run a Claude tool-use loop that lets the model call `sea
 - **THEN** the agent executes the requested tool, appends the tool result to the conversation, and calls the model again
 - **AND** the loop ends when the model stops requesting tools (its turn ends naturally)
 
-#### Scenario: Configurable model with adaptive thinking
+#### Scenario: Configurable model with thinking disabled
 - **WHEN** the agent is constructed
-- **THEN** it uses `claude-sonnet-4-6` by default (overridable by configuration) with adaptive thinking, not a fixed thinking-token budget
+- **THEN** it uses `claude-sonnet-4-6` by default (overridable by configuration) with extended thinking disabled (`thinking={"type":"disabled"}`), so each assistant turn is a clean text + tool-use transcript replayed verbatim across the loop
 
 #### Scenario: Static prompt is cached
 - **WHEN** the agent builds a request
