@@ -225,3 +225,4 @@ evals/embeddings/results/*
 # CHO-19 retrieval-quality eval outputs
 evals/quality/results/*
 !evals/quality/results/.gitkeep
+.gstack/
