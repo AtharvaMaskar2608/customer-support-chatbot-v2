@@ -1,0 +1,513 @@
+{
+  "meta": {
+    "kind": "baseline_raw_question",
+    "model": null,
+    "produced": 50,
+    "seed": 19,
+    "generated_at": "20260705T202535Z",
+    "source_table": "kb_faq",
+    "note": "input is the verbatim kb_faq.question — retrieval is circular by design; used to quantify the synthetic-vs-real recall gap (CHO-19)."
+  },
+  "goldens": [
+    {
+      "input": "Why are F&O buy orders blocked on expiry?",
+      "expected_output": "To prevent settlement risk and ensure delivery compliance.",
+      "context": [
+        "RMS › Expiry-Day Restrictions\nQ: Why are F&O buy orders blocked on expiry?\nA: To prevent settlement risk and ensure delivery compliance."
+      ],
+      "chunk_id": 801,
+      "topic": "RMS",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Are margins reduced for hedged strategies?",
+      "expected_output": "Yes, spread and hedged positions have lower margin requirements.",
+      "context": [
+        "StrikeX › Margins\nQ: Are margins reduced for hedged strategies?\nA: Yes, spread and hedged positions have lower margin requirements."
+      ],
+      "chunk_id": 658,
+      "topic": "StrikeX",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "In which modes you can modify your bank details?",
+      "expected_output": "you can modify your bank details through the offline/online mode.",
+      "context": [
+        "Modification › BANK MODIFICATION\nQ: In which modes you can modify your bank details?\nA: you can modify your bank details through the offline/online mode."
+      ],
+      "chunk_id": 200,
+      "topic": "Modification",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Where can I get help for SLBM-related issues?",
+      "expected_output": "You can contact to your dedicated Relationship Manager .",
+      "context": [
+        "SLBM › General Understanding\nQ: Where can I get help for SLBM-related issues?\nA: You can contact to your dedicated Relationship Manager ."
+      ],
+      "chunk_id": 566,
+      "topic": "SLBM",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "How long does unpledging take?",
+      "expected_output": "Unpledging usually takes 1 working day, subject to confirmation.",
+      "context": [
+        "DP related › PLEDGE / UNPLEDGE / INVOCATION\nQ: How long does unpledging take?\nA: Unpledging usually takes 1 working day, subject to confirmation."
+      ],
+      "chunk_id": 371,
+      "topic": "DP related",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Can DIS or share transfer charges be avoided?",
+      "expected_output": "No, these charges are mandatory for processing offline share transfers.",
+      "context": [
+        "Charges › DIS Booklet & Share Transfer\nQ: Can DIS or share transfer charges be avoided?\nA: No, these charges are mandatory for processing offline share transfers."
+      ],
+      "chunk_id": 1053,
+      "topic": "Charges",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "How much are SEBI charges?",
+      "expected_output": "SEBI charges are ₹10 per crore of transaction value and are uniform across all brokers.",
+      "context": [
+        "Charges › Transaction / Exchange / SEBI / GST charges\nQ: How much are SEBI charges?\nA: SEBI charges are ₹10 per crore of transaction value and are uniform across all brokers."
+      ],
+      "chunk_id": 1061,
+      "topic": "Charges",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Why is tagging of UT complaints important?",
+      "expected_output": "It helps in categorizing, tracking, and resolving the complaint correctly.",
+      "context": [
+        "UT › Follow-ups & Documentation\nQ: Why is tagging of UT complaints important?\nA: It helps in categorizing, tracking, and resolving the complaint correctly."
+      ],
+      "chunk_id": 491,
+      "topic": "UT",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Does brokerage include taxes?",
+      "expected_output": "No, brokerage is separate. Taxes like GST, STT, and exchange charges are applied additionally.",
+      "context": [
+        "Charges › BROKERAGE\nQ: Does brokerage include taxes?\nA: No, brokerage is separate. Taxes like GST, STT, and exchange charges are applied additionally."
+      ],
+      "chunk_id": 972,
+      "topic": "Charges",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "We request you to kindly place the order by selecting ‘LIMIT’ as the order type",
+      "expected_output": "In case you face any issue while doing so, please feel free to connect with us and we will be happy to assist you.",
+      "context": [
+        "Orders › Basic Question Bank\nQ: We request you to kindly place the order by selecting ‘LIMIT’ as the order type\nA: In case you face any issue while doing so, please feel free to connect with us and we will be happy to assist you."
+      ],
+      "chunk_id": 447,
+      "topic": "Orders",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Examples of Mandatory Corporate Actions?",
+      "expected_output": "Dividend, Bonus Issue, Stock Split, Merger/Acquisition, Rights Issue, Spin-off.",
+      "context": [
+        "Corporate action › Corporate Action – Basics\nQ: Examples of Mandatory Corporate Actions?\nA: Dividend, Bonus Issue, Stock Split, Merger/Acquisition, Rights Issue, Spin-off."
+      ],
+      "chunk_id": 678,
+      "topic": "Corporate action",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "How to place stop loss order",
+      "expected_output": "You can place a Stop-Loss order for your position by following these steps:\n\nSelect the script for which you want to set the Stop-Loss.\nSpecify the quantity, Stop-Loss price, and trigger price.\nEnsure the trigger price is close to the Stop-Loss price for effective execution.\nSwipe to sell or purchase as required.",
+      "context": [
+        "Orders › Stop-Loss Orders\nQ: How to place stop loss order\nA: You can place a Stop-Loss order for your position by following these steps:\n\nSelect the script for which you want to set the Stop-Loss.\nSpecify the quantity, Stop-Loss price, and trigger price.\nEnsure the trigger price is close to the Stop-Loss price for effective execution.\nSwipe to sell or purchase as required."
+      ],
+      "chunk_id": 395,
+      "topic": "Orders",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "How to apply for  a buyback",
+      "expected_output": "You can apply for the Buyback through the Choice FinX Mobile Application or the Web Platform.\nThrough the Choice FinX Mobile Application:\n\nLogin to the Choice FinX application.\nGo to the Portfolio section.\nIf you are eligible for the buyback and hold the respective stock, you will see a Buyback Banner below the portfolio valuation details.\nClick on the banner and proceed with the buyback application as per the on-screen instructions.\nEnter the quantity you wish to tender and submit your request.\nThrough the Choice FinX Web Platform:\n1. Open the Choice FinX website:\nhttps://finx.choiceindia.com/\n2. Login using your registered Mobile Number/User ID and Password.\n3. After successful login, you will be redirected to the Home Page.\n4. Under the Smart Investments section, click on Buyback.\n5. You will be able to view the list of stocks with active buyback opportunities.\n6. Select the eligible stock and proceed with the application as per the on-screen instructions.\n\nImportant Points:\n\nDDPI (Demat Debit and Pledge Instruction) must be active in your account to submit a buyback request.\nIf DDPI is not active, you can activate it by navigating to the Profile section of the FinX platform and completing the DDPI activation process.\nThe shares intended for buyback must be available in your Demat account and should not be pledged, frozen, or under any restriction at the time of application.\nBuyback eligibility is available only to clients who held the shares on or before the specified record date.\nIf the stock is not visible under the Buyback section, it may indicate that the holdings do not meet the eligibility criteria.\nOn the last day of the buyback tendering period, applications can be submitted only up to 12:30 PM.",
+      "context": [
+        "Corporate action › Buyback\nQ: How to apply for  a buyback\nA: You can apply for the Buyback through the Choice FinX Mobile Application or the Web Platform.\nThrough the Choice FinX Mobile Application:\n\nLogin to the Choice FinX application.\nGo to the Portfolio section.\nIf you are eligible for the buyback and hold the respective stock, you will see a Buyback Banner below the portfolio valuation details.\nClick on the banner and proceed with the buyback application as per the on-screen instructions.\nEnter the quantity you wish to tender and submit your request.\nThrough the Choice FinX Web Platform:\n1. Open the Choice FinX website:\nhttps://finx.choiceindia.com/\n2. Login using your registered Mobile Number/User ID and Password.\n3. After successful login, you will be redirected to the Home Page.\n4. Under the Smart Investments section, click on Buyback.\n5. You will be able to view the list of stocks with active buyback opportunities.\n6. Select the eligible stock and proceed with the application as per the on-screen instructions.\n\nImportant Points:\n\nDDPI (Demat Debit and Pledge Instruction) must be active in your account to submit a buyback request.\nIf DDPI is not active, you can activate it by navigating to the Profile section of the FinX platform and completing the DDPI activation process.\nThe shares intended for buyback must be available in your Demat account and should not be pledged, frozen, or under any restriction at the time of application.\nBuyback eligibility is available only to clients who held the shares on or before the specified record date.\nIf the stock is not visible under the Buyback section, it may indicate that the holdings do not meet the eligibility criteria.\nOn the last day of the buyback tendering period, applications can be submitted only up to 12:30 PM."
+      ],
+      "chunk_id": 704,
+      "topic": "Corporate action",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Mcx comodity active ,still not able to take order",
+      "expected_output": "your commodity order-related concern. We would like to inform you that your order was rejected in MCX because the order type was selected as ‘MARKET’, which is not permitted in MCX.",
+      "context": [
+        "Orders › Basic Question Bank\nQ: Mcx comodity active ,still not able to take order\nA: your commodity order-related concern. We would like to inform you that your order was rejected in MCX because the order type was selected as ‘MARKET’, which is not permitted in MCX."
+      ],
+      "chunk_id": 446,
+      "topic": "Orders",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "What margins apply in cash segment?",
+      "expected_output": "Minimum 20% upfront, plus VAR, ELM, and MTM margins.",
+      "context": [
+        "RMS › Margin Collection Rules\nQ: What margins apply in cash segment?\nA: Minimum 20% upfront, plus VAR, ELM, and MTM margins."
+      ],
+      "chunk_id": 797,
+      "topic": "RMS",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "What to do if data is not updating?",
+      "expected_output": "Refresh browser, clear cache, check internet, or relogin.",
+      "context": [
+        "StrikeX › Troubleshooting\nQ: What to do if data is not updating?\nA: Refresh browser, clear cache, check internet, or relogin."
+      ],
+      "chunk_id": 665,
+      "topic": "StrikeX",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Process to modify the Address Details in offline mode?",
+      "expected_output": "To modify your bank details through the offline mode in Choice Broking, you'll need to follow these steps¹: \n    - Download the Account Modification Form: Visit Choice Broking's website and download the                 Account Modification Form. \n    - Fill in the Required Details: Fill out the form as per the updated Address Proof. \n    - Gather Required Documents: Collect necessary documents, including\n      Compile photocopies: Collect photocopies of valid Proof of Address (POA) documents, such as utility bills, a passport, or a bank statement.\n        Self-attest the documents: Sign the copies of your documents to self-attest them. \nCourier: Send the duly filled and signed modification form along with the photocopies of your bank proof documents to the Choice Broking office.\nBranch visit: Submit the documents in person at a Choice Broking branch.",
+      "context": [
+        "Modification › How to delete or inactive a bank account\nQ: Process to modify the Address Details in offline mode?\nA: To modify your bank details through the offline mode in Choice Broking, you'll need to follow these steps¹: \n    - Download the Account Modification Form: Visit Choice Broking's website and download the                 Account Modification Form. \n    - Fill in the Required Details: Fill out the form as per the updated Address Proof. \n    - Gather Required Documents: Collect necessary documents, including\n      Compile photocopies: Collect photocopies of valid Proof of Address (POA) documents, such as utility bills, a passport, or a bank statement.\n        Self-attest the documents: Sign the copies of your documents to self-attest them. \nCourier: Send the duly filled and signed modification form along with the photocopies of your bank proof documents to the Choice Broking office.\nBranch visit: Submit the documents in person at a Choice Broking branch."
+      ],
+      "chunk_id": 193,
+      "topic": "Modification",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Is stamp duty applicable on intraday and F&O?",
+      "expected_output": "Yes, stamp duty applies on buy transactions across all segments.",
+      "context": [
+        "Charges › Securities Transaction Tax (STT / CTT)\nQ: Is stamp duty applicable on intraday and F&O?\nA: Yes, stamp duty applies on buy transactions across all segments."
+      ],
+      "chunk_id": 943,
+      "topic": "Charges",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "What happens to my shares if I pass away?",
+      "expected_output": "Shares are transmitted to the nominee or legal heirs through the transmission process.",
+      "context": [
+        "DP related › DP BASICS & DEMAT ACCOUNT\nQ: What happens to my shares if I pass away?\nA: Shares are transmitted to the nominee or legal heirs through the transmission process."
+      ],
+      "chunk_id": 277,
+      "topic": "DP related",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Can NRI parents open a Minor Demat Account for their child in India?",
+      "expected_output": "Yes, NRIs can open a Minor Demat Account, but additional documents like a foreign address proof may be required",
+      "context": [
+        "Onboarding › MINOR ACCOUNT OPENING\nQ: Can NRI parents open a Minor Demat Account for their child in India?\nA: Yes, NRIs can open a Minor Demat Account, but additional documents like a foreign address proof may be required"
+      ],
+      "chunk_id": 144,
+      "topic": "Onboarding",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "At what price are Rights Issue shares offered?",
+      "expected_output": "They are usually offered at a discount to the current market price.",
+      "context": [
+        "Corporate action › Rights Issue\nQ: At what price are Rights Issue shares offered?\nA: They are usually offered at a discount to the current market price."
+      ],
+      "chunk_id": 724,
+      "topic": "Corporate action",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Can I change my DP without selling shares?",
+      "expected_output": "Yes, you can transfer your holdings to another demat account.",
+      "context": [
+        "DP related › DP BASICS & DEMAT ACCOUNT\nQ: Can I change my DP without selling shares?\nA: Yes, you can transfer your holdings to another demat account."
+      ],
+      "chunk_id": 270,
+      "topic": "DP related",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "When will the payment details be shared with the client?",
+      "expected_output": "Once the required documents and details are received, the team will share the deal sheet along with payment details.",
+      "context": [
+        "SLBM › NCD\nQ: When will the payment details be shared with the client?\nA: Once the required documents and details are received, the team will share the deal sheet along with payment details."
+      ],
+      "chunk_id": 616,
+      "topic": "SLBM",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "What are the types of Buyback?",
+      "expected_output": "Buyback can be of two types - Tender Offer & Open Market Offer.\n\nTender Offer: Shareholders will have the option to submit (or tender) a portion or all of their shares. Within a certain time frame and at a premium to the current market price, this premium compensates investors for tendering their shares rather than holding on to them.\n\nMarket Offer: Companies buy back shares on the open market over an extended period of time.",
+      "context": [
+        "Orders › Basic Question Bank\nQ: What are the types of Buyback?\nA: Buyback can be of two types - Tender Offer & Open Market Offer.\n\nTender Offer: Shareholders will have the option to submit (or tender) a portion or all of their shares. Within a certain time frame and at a premium to the current market price, this premium compensates investors for tendering their shares rather than holding on to them.\n\nMarket Offer: Companies buy back shares on the open market over an extended period of time."
+      ],
+      "chunk_id": 456,
+      "topic": "Orders",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Is settlement guaranteed in SLBM?",
+      "expected_output": "Yes, settlement is guaranteed by NCL (NSE Clearing Limited).",
+      "context": [
+        "SLBM › Key Features\nQ: Is settlement guaranteed in SLBM?\nA: Yes, settlement is guaranteed by NCL (NSE Clearing Limited)."
+      ],
+      "chunk_id": 534,
+      "topic": "SLBM",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Why is compliance approval important?",
+      "expected_output": "To ensure the firm is protected against regulatory escalation.",
+      "context": [
+        "UT › Situation J: Compliance-Sensitive Case\nQ: Why is compliance approval important?\nA: To ensure the firm is protected against regulatory escalation."
+      ],
+      "chunk_id": 508,
+      "topic": "UT",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Can a company transfer shares from one Corporate Demat Account to another?",
+      "expected_output": "Yes, shares can be transferred between Corporate Demat Accounts using the Delivery Instruction Slip (DIS) or online transfer facility, subject to authorization.",
+      "context": [
+        "Onboarding › Corporate Account Opening\nQ: Can a company transfer shares from one Corporate Demat Account to another?\nA: Yes, shares can be transferred between Corporate Demat Accounts using the Delivery Instruction Slip (DIS) or online transfer facility, subject to authorization."
+      ],
+      "chunk_id": 159,
+      "topic": "Onboarding",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Will removing phone lock affect app security?",
+      "expected_output": "Temporarily removing the lock helps resolve login issues; you may re-enable it later.",
+      "context": [
+        "Login › How long does KYC correction take?\nQ: Will removing phone lock affect app security?\nA: Temporarily removing the lock helps resolve login issues; you may re-enable it later."
+      ],
+      "chunk_id": 855,
+      "topic": "Login",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Who decides pledge charges – FinX or the regulator?",
+      "expected_output": "Pledge charges are set by the Depository Participant as per regulatory guidelines.",
+      "context": [
+        "Charges › Pledge / Unpledge / Invocation\nQ: Who decides pledge charges – FinX or the regulator?\nA: Pledge charges are set by the Depository Participant as per regulatory guidelines."
+      ],
+      "chunk_id": 1030,
+      "topic": "Charges",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Who can open an HUF account?",
+      "expected_output": "Only Hindu families (including Buddhists, Jains, Sikhs) can open an HUF account, operated by the Karta.",
+      "context": [
+        "Onboarding › HUF Account Opening\nQ: Who can open an HUF account?\nA: Only Hindu families (including Buddhists, Jains, Sikhs) can open an HUF account, operated by the Karta."
+      ],
+      "chunk_id": 95,
+      "topic": "Onboarding",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Are remat charges refundable?",
+      "expected_output": "No, remat charges are non-refundable once applied.",
+      "context": [
+        "DP related › REMAT (Rematerialisation)\nQ: Are remat charges refundable?\nA: No, remat charges are non-refundable once applied."
+      ],
+      "chunk_id": 324,
+      "topic": "DP related",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Is FinX suitable for long-term investors?",
+      "expected_output": "Yes, FinX is ideal for long-term investors due to strong service support, compliance, and stable infrastructure.",
+      "context": [
+        "Charges › Free services vs other brokers (comparison & objections)\nQ: Is FinX suitable for long-term investors?\nA: Yes, FinX is ideal for long-term investors due to strong service support, compliance, and stable infrastructure."
+      ],
+      "chunk_id": 1079,
+      "topic": "Charges",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "When can I sell IPO shares?",
+      "expected_output": "You can sell on the listing day, especially if you are a retail investor.",
+      "context": [
+        "SLBM › IPO Process Understanding\nQ: When can I sell IPO shares?\nA: You can sell on the listing day, especially if you are a retail investor."
+      ],
+      "chunk_id": 588,
+      "topic": "SLBM",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "What happens if nominee is not added?",
+      "expected_output": "A nominee is the person legally entitled to claim",
+      "context": [
+        "Modification › How can I check my demat account nominee?\nQ: What happens if nominee is not added?\nA: A nominee is the person legally entitled to claim"
+      ],
+      "chunk_id": 233,
+      "topic": "Modification",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "How can I download my Mutual Fund reports?",
+      "expected_output": "Login to the Choice FinX app and navigate to More > Reports. You can download your Mutual Fund reports from there.",
+      "context": [
+        "Mutual Fund\nQ: How can I download my Mutual Fund reports?\nA: Login to the Choice FinX app and navigate to More > Reports. You can download your Mutual Fund reports from there."
+      ],
+      "chunk_id": 15,
+      "topic": "Mutual Fund",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "What is client bank a/c amt got debited and not got credited in client choice trading a/c while doing payin.",
+      "expected_output": "client bank a/c amt got debited and not got credited in client choice trading a/c while doing payin than client need to send bank statement on mail to customercare@choiceindia.com so that agent can check with account team regarding this",
+      "context": [
+        "Funds › Payin And Payout and mode of payment\nQ: What is client bank a/c amt got debited and not got credited in client choice trading a/c while doing payin.\nA: client bank a/c amt got debited and not got credited in client choice trading a/c while doing payin than client need to send bank statement on mail to customercare@choiceindia.com so that agent can check with account team regarding this"
+      ],
+      "chunk_id": 405,
+      "topic": "Funds",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "How Interest Charged by the Broker",
+      "expected_output": "•        Brokers charge interest on the funded amount (the money they provide to finance your purchase).\n•        Rates vary broker to broker (usually 10–18% p.a.) depending on the broker and client profile.\n•        Interest is calculated daily on the outstanding funded amount and debited to the client’s ledger at month-end or as per the broker’s cycle.\n•        Example: If you use ₹1,00,000 broker funding at 21% p.a., then daily interest = 1,00,000 × 21% ÷ 365 ≈ ₹57.53 per day.",
+      "context": [
+        "MTF\nQ: How Interest Charged by the Broker\nA: •        Brokers charge interest on the funded amount (the money they provide to finance your purchase).\n•        Rates vary broker to broker (usually 10–18% p.a.) depending on the broker and client profile.\n•        Interest is calculated daily on the outstanding funded amount and debited to the client’s ledger at month-end or as per the broker’s cycle.\n•        Example: If you use ₹1,00,000 broker funding at 21% p.a., then daily interest = 1,00,000 × 21% ÷ 365 ≈ ₹57.53 per day."
+      ],
+      "chunk_id": 18,
+      "topic": "MTF",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "How do I unpledge my shares?",
+      "expected_output": "You can submit an unpledge request through the FinX app or platform.",
+      "context": [
+        "DP related › PLEDGE / UNPLEDGE / INVOCATION\nQ: How do I unpledge my shares?\nA: You can submit an unpledge request through the FinX app or platform."
+      ],
+      "chunk_id": 370,
+      "topic": "DP related",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "What is the customer care emai",
+      "expected_output": "You can email customercare@choiceindia.com",
+      "context": [
+        "Finx features › Support & Help\nQ: What is the customer care emai\nA: You can email customercare@choiceindia.com"
+      ],
+      "chunk_id": 930,
+      "topic": "Finx features",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Can I sell my shares before the merger is completed?",
+      "expected_output": "Yes, you can sell your shares in the market before the merger if the market allows. However, the value may fluctuate depending on merger approval status and the market reaction.",
+      "context": [
+        "Corporate action › Merger / Demerger\nQ: Can I sell my shares before the merger is completed?\nA: Yes, you can sell your shares in the market before the merger if the market allows. However, the value may fluctuate depending on merger approval status and the market reaction."
+      ],
+      "chunk_id": 733,
+      "topic": "Corporate action",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Can I trade directly from recommendations?",
+      "expected_output": "Yes, you can place buy or sell orders directly from the recommendation list.",
+      "context": [
+        "Finx features › Recommendations\nQ: Can I trade directly from recommendations?\nA: Yes, you can place buy or sell orders directly from the recommendation list."
+      ],
+      "chunk_id": 917,
+      "topic": "Finx features",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Can an Individual Demat Account be converted into a Joint Account?",
+      "expected_output": "No, an Individual Demat Account cannot be converted. A new Joint Account must be opened separately.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: Can an Individual Demat Account be converted into a Joint Account?\nA: No, an Individual Demat Account cannot be converted. A new Joint Account must be opened separately."
+      ],
+      "chunk_id": 63,
+      "topic": "Onboarding",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "I want to close my account through offline process",
+      "expected_output": "we would like to understand why you wish to close your account with us. As we don't want to lose a customer like you. We would be glad if you can reconsider your decision and continue your relationship with us so that we can serve you better.\n\nHence, we request you to re-think your account closure. If you need any help or guidance you may revert us back. We'll be happy to help you.\n\nStill, you want to go for the closer, we like to inform you that Kindly submit a hard copy of the closure request at the branch or send it to the address mentioned below so we can proceed with the closure through the offline process\n\nChoice Equity Broking Pvt. Ltd.\n1002, 10th Floor, Sumer Plaza, \nMarol Maroshi Road, Andheri East, \nMumbai 400059\nhttps://cmsapi.choiceindia.com/assets/be550f20-ed16-4ed3-9995-d193a90ccf43 \nhttps://choicetechlab.slack.com/files/U05J2N5RBH7/F07SGS0UUJF/sample_closure_form.pdf",
+      "context": [
+        "Account Closure › Offline Closer\nQ: I want to close my account through offline process\nA: we would like to understand why you wish to close your account with us. As we don't want to lose a customer like you. We would be glad if you can reconsider your decision and continue your relationship with us so that we can serve you better.\n\nHence, we request you to re-think your account closure. If you need any help or guidance you may revert us back. We'll be happy to help you.\n\nStill, you want to go for the closer, we like to inform you that Kindly submit a hard copy of the closure request at the branch or send it to the address mentioned below so we can proceed with the closure through the offline process\n\nChoice Equity Broking Pvt. Ltd.\n1002, 10th Floor, Sumer Plaza, \nMarol Maroshi Road, Andheri East, \nMumbai 400059\nhttps://cmsapi.choiceindia.com/assets/be550f20-ed16-4ed3-9995-d193a90ccf43 \nhttps://choicetechlab.slack.com/files/U05J2N5RBH7/F07SGS0UUJF/sample_closure_form.pdf"
+      ],
+      "chunk_id": 866,
+      "topic": "Account Closure",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "What documents are needed to open a LLP (Limited Liability Partnership) {As per LLP Act 2008) account?",
+      "expected_output": "1.        LLP pan card copy required (Note - Fill up form as per pan site name only)\n2.        LLP address proof required (Note - Not more than two months old)\n3.        LLP Bank proof required (Note – Personalize cheque copy or latest two month bank statement copy with IFSC and MICR code)\n4.        LLP Designated Partners pan and address proof required with including their photograph, Designation and Contact numbers (As per MCA site)\n5.        LLP Board resolution copy required on letterhead with Authorize signatory name, sign and stamp\n6.        LLP Share Holding pattern required on letterhead including 10% and above shareholders (with CA attestation)\nFor individual shareholders --- Pan and address proof required.\nFor Non-individual shareholders --- Pan, address proof and shareholding pattern required\n7.        LLP Ultimate Beneficial Owners (UBO) declaration copy required on letterhead\n8.        LLP latest two years Annual reports (Balance sheet with P&L copy) required with CA’s attestation\n9.        LLP CA’s Net-worth Certificate copy required on ca’s letterhead with CA’s stamp and signature. \n(Note - If LLP newly open and not complete one financial year)\n10.        LLP Incorporation Certificate copy required which is issued by MCA (Ministry of Company Affair)\n11.        LLP Agreement copy / Deed copy required\n12.        Note - Verified with original and In-person verification stamp required on client all supporting proofs\n13.        Note - Kindly fill up the client name in whole account opening form as per Pan Site name.",
+      "context": [
+        "Checklist of Account opening › Account opening\nQ: What documents are needed to open a LLP (Limited Liability Partnership) {As per LLP Act 2008) account?\nA: 1.        LLP pan card copy required (Note - Fill up form as per pan site name only)\n2.        LLP address proof required (Note - Not more than two months old)\n3.        LLP Bank proof required (Note – Personalize cheque copy or latest two month bank statement copy with IFSC and MICR code)\n4.        LLP Designated Partners pan and address proof required with including their photograph, Designation and Contact numbers (As per MCA site)\n5.        LLP Board resolution copy required on letterhead with Authorize signatory name, sign and stamp\n6.        LLP Share Holding pattern required on letterhead including 10% and above shareholders (with CA attestation)\nFor individual shareholders --- Pan and address proof required.\nFor Non-individual shareholders --- Pan, address proof and shareholding pattern required\n7.        LLP Ultimate Beneficial Owners (UBO) declaration copy required on letterhead\n8.        LLP latest two years Annual reports (Balance sheet with P&L copy) required with CA’s attestation\n9.        LLP CA’s Net-worth Certificate copy required on ca’s letterhead with CA’s stamp and signature. \n(Note - If LLP newly open and not complete one financial year)\n10.        LLP Incorporation Certificate copy required which is issued by MCA (Ministry of Company Affair)\n11.        LLP Agreement copy / Deed copy required\n12.        Note - Verified with original and In-person verification stamp required on client all supporting proofs\n13.        Note - Kindly fill up the client name in whole account opening form as per Pan Site name."
+      ],
+      "chunk_id": 184,
+      "topic": "Checklist of Account opening",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Who can be a guardian for a Minor Account?",
+      "expected_output": "The parent or legal guardian of the child can act as the guardian for the Minor Account.",
+      "context": [
+        "Onboarding › MINOR ACCOUNT OPENING\nQ: Who can be a guardian for a Minor Account?\nA: The parent or legal guardian of the child can act as the guardian for the Minor Account."
+      ],
+      "chunk_id": 127,
+      "topic": "Onboarding",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "What is MTF (Margin Trading Facility)?",
+      "expected_output": "•        MTF is a facility offered by stockbrokers that allows clients to buy shares by paying only a part of the total value, and the rest is funded by the broker.\n•        Example: If you want to buy shares worth ₹1,00,000 and your broker allows 4x leverage under MTF, you only need to pay ₹25,000, and the broker funds the remaining ₹75,000.\n•        This helps clients take larger positions with limited own capital, but interest is charged on the funded portion.",
+      "context": [
+        "MTF\nQ: What is MTF (Margin Trading Facility)?\nA: •        MTF is a facility offered by stockbrokers that allows clients to buy shares by paying only a part of the total value, and the rest is funded by the broker.\n•        Example: If you want to buy shares worth ₹1,00,000 and your broker allows 4x leverage under MTF, you only need to pay ₹25,000, and the broker funds the remaining ₹75,000.\n•        This helps clients take larger positions with limited own capital, but interest is charged on the funded portion."
+      ],
+      "chunk_id": 17,
+      "topic": "MTF",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "Can clients update their ID during pending onboarding?",
+      "expected_output": "Yes. Clients can update their ID during pending onboarding on the review page at the last step of the pending link. This ensures the verification process continues smoothly.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: Can clients update their ID during pending onboarding?\nA: Yes. Clients can update their ID during pending onboarding on the review page at the last step of the pending link. This ensures the verification process continues smoothly."
+      ],
+      "chunk_id": 29,
+      "topic": "Onboarding",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "What Is a Demat Statement?",
+      "expected_output": "A Demat Statement is an official document that shows the holdings of securities in a client’s demat account. It reflects all shares, ETFs, bonds, mutual funds, and other securities held in electronic (dematerialized) form as of a specific date.\n\nIt is similar to a bank account statement, but instead of money, it shows securities and investments.",
+      "context": [
+        "Reports › Profit & loss\nQ: What Is a Demat Statement?\nA: A Demat Statement is an official document that shows the holdings of securities in a client’s demat account. It reflects all shares, ETFs, bonds, mutual funds, and other securities held in electronic (dematerialized) form as of a specific date.\n\nIt is similar to a bank account statement, but instead of money, it shows securities and investments."
+      ],
+      "chunk_id": 1091,
+      "topic": "Reports",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "I forgot my Client ID. How can I retrieve it?",
+      "expected_output": "You may share your PAN number, registered mobile number, or email ID, and we will provide your Client ID.\nAlternatively, you can email customercare@choiceindia.com\n with your details.",
+      "context": [
+        "Login › OTP & Authentication Issues\nQ: I forgot my Client ID. How can I retrieve it?\nA: You may share your PAN number, registered mobile number, or email ID, and we will provide your Client ID.\nAlternatively, you can email customercare@choiceindia.com\n with your details."
+      ],
+      "chunk_id": 823,
+      "topic": "Login",
+      "synthetic_input_quality": null
+    },
+    {
+      "input": "How can I start an SWP (Systematic Withdrawal Plan)?",
+      "expected_output": "Please provide the following details:\n • PAN Number\n • Scheme Name\n • Withdrawal Period/Frequency\n • Initial Investment Amount\n • Withdrawal Amount",
+      "context": [
+        "Mutual Fund\nQ: How can I start an SWP (Systematic Withdrawal Plan)?\nA: Please provide the following details:\n • PAN Number\n • Scheme Name\n • Withdrawal Period/Frequency\n • Initial Investment Amount\n • Withdrawal Amount"
+      ],
+      "chunk_id": 9,
+      "topic": "Mutual Fund",
+      "synthetic_input_quality": null
+    }
+  ]
+}

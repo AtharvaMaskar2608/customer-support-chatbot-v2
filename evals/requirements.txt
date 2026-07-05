@@ -3,3 +3,8 @@ openai>=1.40
 tiktoken>=0.7
 python-dotenv>=1.0
 matplotlib>=3.8
+asyncpg>=0.29
+# Quality / golden-set generation (CHO-18)
+# deepeval pinned: the Synthesizer API + native AnthropicModel wiring is version-sensitive.
+deepeval==4.0.7
+anthropic>=0.40
