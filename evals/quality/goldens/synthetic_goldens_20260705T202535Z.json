@@ -1,0 +1,2519 @@
+{
+  "meta": {
+    "kind": "synthetic",
+    "generator": "deepeval.Synthesizer",
+    "model": "claude-sonnet-5 (Anthropic)",
+    "model_kind": "native",
+    "evolutions": "off",
+    "max_goldens_per_context": 1,
+    "quality_threshold": 0.5,
+    "requested_contexts": 250,
+    "produced": 250,
+    "dropped": 0,
+    "seed": 18,
+    "generated_at": "20260705T202535Z",
+    "source_table": "kb_faq"
+  },
+  "goldens": [
+    {
+      "input": "If I square off my trade the same day, will I still be charged brokerage on it?",
+      "expected_output": "Yes, brokerage applies on all executed trades, including square-off trades—even if squared off the same day.",
+      "context": [
+        "Charges › BROKERAGE\nQ: Is brokerage charged on square-off trades?\nA: Yes, brokerage applies on all executed trades, including square-off trades."
+      ],
+      "chunk_id": 967,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "One of my holdings just announced a 1:1 bonus issue — will the share price drop after that, and roughly by how much?",
+      "expected_output": "Yes, the share price will drop after a 1:1 bonus issue — roughly by 50%. For example, if you held 100 shares at ₹100, you will now hold 200 shares at ₹50.",
+      "context": [
+        "Corporate action › Bonus Issue\nQ: price adjustment after bonus\nA: If a company issues 1 free share for every 1 held, the share price halves (drops by 50%). If you held 100 shares at ₹100, you will now hold 200 shares at ₹50."
+      ],
+      "chunk_id": 709,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "Does Choice decide the pledge charges on my shares, or is that rate actually fixed by SEBI?",
+      "expected_output": "Pledge charges are set by the Depository Participant (Choice), in accordance with regulatory guidelines.",
+      "context": [
+        "Charges › Pledge / Unpledge / Invocation\nQ: Who decides pledge charges – FinX or the regulator?\nA: Pledge charges are set by the Depository Participant as per regulatory guidelines."
+      ],
+      "chunk_id": 1030,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "Why is it important that my unauthorized transaction complaint gets categorized correctly on FinX?",
+      "expected_output": "Correctly categorizing your unauthorized transaction complaint on FinX is important because it helps in tracking and resolving the complaint accurately and efficiently.",
+      "context": [
+        "UT › Follow-ups & Documentation\nQ: Why is tagging of UT complaints important?\nA: It helps in categorizing, tracking, and resolving the complaint correctly."
+      ],
+      "chunk_id": 491,
+      "topic": "UT",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "My order on FinX just got rejected and I'm not sure why. Can you break down the common reasons like insufficient margin, price band issues, or exchange restrictions, and help me figure out which one applied to my case?",
+      "expected_output": "Your order may have been rejected due to one of these common reasons: insufficient margin, price range breach, or exchange rules. Without more specific details about your account and the order itself (such as the exact rejection message), I can't determine which specific reason applied to your case—I'd recommend checking the rejection notice on FinX or contacting support with your order ID for a precise explanation.",
+      "context": [
+        "Orders › Order Execution & Modification\nQ: Why was my order rejected?\nA: Orders may be rejected due to insufficient margin, price range breach, or exchange rules."
+      ],
+      "chunk_id": 432,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "I want to save my Ledger Report as a PDF on the FinX app — how do I get there through Ledger and then use the Statement Download feature?",
+      "expected_output": "Go to SMART → Ledger, then click Statement Download on the ledger page. The ledger file will be downloaded to your system in PDF format.",
+      "context": [
+        "Reports › Ledger\nQ: How to Download the Ledger Report (Method 1)?\nA: 1. Go to SMART → Ledger.\n\n2. Click on Statement Download (available on the ledger page).\n\n3. The ledger file will be downloaded in your system in the PDF format."
+      ],
+      "chunk_id": 1082,
+      "topic": "Reports",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "If I fall short on my margin requirement, will the penalty charge actually get added to my trading account?",
+      "expected_output": "Yes. Margin penalties resulting from shortfalls caused by you will be charged to your trading account.",
+      "context": [
+        "RMS › Penalty & Concentration Risk\nQ: Can margin penalties be passed to clients?\nA: Yes, penalties due to client-related shortfalls may be charged."
+      ],
+      "chunk_id": 799,
+      "topic": "RMS",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "What is the Market Movers feature in FinX and how does it help me spot stocks that are trending or seeing a lot of price action for trading?",
+      "expected_output": "Market Movers helps identify high-performing or high-volatility stocks, giving you trading opportunities based on stocks that are trending or seeing significant price action.",
+      "context": [
+        "Finx features › Market Movers\nQ: How does Market Movers help in trading?\nA: It helps identify high-performing or high-volatility stocks for trading opportunities."
+      ],
+      "chunk_id": 913,
+      "topic": "Finx features",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "Where in the FinX app can I track my SIPs and view my mutual fund holdings?",
+      "expected_output": "You can track your SIPs and view your mutual fund holdings under **My Investments** in the FinX app.",
+      "context": [
+        "Finx features › Mutual Fund Investments\nQ: Where can I track my mutual fund investments?\nA: All investments and SIPs can be tracked under My Investments."
+      ],
+      "chunk_id": 904,
+      "topic": "Finx features",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "After the transmission process is completed, will the deceased holder's demat account remain active, or will it be closed?",
+      "expected_output": "The deceased holder's demat account will be closed after successful transmission; it will not remain active.",
+      "context": [
+        "DP related › TRANSMISSION OF SHARES (DEATH CASES)\nQ: Will the old demat account remain active after transmission?\nA: No, the deceased holder’s demat account is closed after successful transmission."
+      ],
+      "chunk_id": 346,
+      "topic": "DP related",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Before I hit submit on a StrikeX order, what details should I double-check—like Buy or Sell, the strike price, CE/PE, quantity, and order type—to make sure everything's correct?",
+      "expected_output": "Before submitting, double-check: Buy/Sell, strike price, CE/PE, quantity, and order type—to ensure everything is correct.",
+      "context": [
+        "StrikeX › Safety & Security\nQ: What trading safety checks are advised?\nA: Verify Buy/Sell, strike, CE/PE, quantity, and order type before placing."
+      ],
+      "chunk_id": 668,
+      "topic": "StrikeX",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "For closing a UT case, is it enough if I just get an email confirmation, or do I also need a call confirmation before it can be closed?",
+      "expected_output": "No, email confirmation alone is not enough — call confirmation is also mandatory before a UT case can be closed.",
+      "context": [
+        "UT › Client Communication & Closure Rules\nQ: Is email confirmation alone enough to close a UT case?\nA: No, call confirmation is also mandatory."
+      ],
+      "chunk_id": 509,
+      "topic": "UT",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "I've set up a GTC order on FinX - what's the maximum duration it stays valid before I have to renew or cancel it myself?",
+      "expected_output": "A GTC (Good-Till-Cancelled) order remains valid for up to 1 year before it expires, unless it is executed or cancelled sooner.",
+      "context": [
+        "Orders › GTC & GTD Orders\nQ: What is a GTC order?\nA: A Good-Till-Cancelled order remains active until executed or cancelled, valid up to 1 year."
+      ],
+      "chunk_id": 412,
+      "topic": "Orders",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "What paperwork will I need to hand in if I want to set up my demat account the offline way?",
+      "expected_output": "You will need: PAN card, proof of identity (Aadhaar, Passport, Voter ID, or Driving License), proof of address (Aadhaar, Passport, Utility bill, or Bank statement), a canceled cheque/bank passbook copy, a passport-size photograph, and a self-attested IPV.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: What are the mandatory documents required for opening an offline demat account?\nA: PAN card, proof of identity (Aadhaar, Passport, Voter ID, Driving License), proof of address (Aadhaar, Passport, Utility bill, Bank statement), canceled cheque/bank passbook copy, and passport-size photograph and self attested ipv."
+      ],
+      "chunk_id": 85,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "How often will Choice FinX send me my demat account statement?",
+      "expected_output": "Demat statements are sent periodically as per depository rules and your account activity.",
+      "context": [
+        "DP related › DP BASICS & DEMAT ACCOUNT\nQ: How often do I receive a demat statement?\nA: Demat statements are sent periodically as per depository rules and your activity."
+      ],
+      "chunk_id": 282,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "What happens if I don't manually exit my intraday position before market close — does FinX auto square-off my trade?",
+      "expected_output": "Yes — if you don't manually square off your intraday position before market close, it may be auto squared off by RMS.",
+      "context": [
+        "Orders › Intraday & Carry Forward\nQ: What happens if intraday positions are not squared off?\nA: They may be auto squared off by RMS."
+      ],
+      "chunk_id": 437,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "Where can I find the link to log into StrikeX?",
+      "expected_output": "You can log into StrikeX at https://strikex.choiceindia.com/.",
+      "context": [
+        "StrikeX › StrikeX Overview\nQ: What is the access URL for StrikeX?\nA: You can access StrikeX at https://strikex.choiceindia.com/\n."
+      ],
+      "chunk_id": 628,
+      "topic": "StrikeX",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "I've already set up a nominee for my demat account, but now I want to change it to a different person. Can I do that?",
+      "expected_output": "Yes, you can change your existing nominee at any time by following the same online or offline process used to set up a nominee.",
+      "context": [
+        "Modification › How can I check my demat account nominee?\nQ: Can I change or delete an existing nominee?\nA: Yes, you can change or delete nominees at any time by following the same online or offline process. To delete a nominee, you will need to submit a declaration stating that you do not wish to make a nomination."
+      ],
+      "chunk_id": 236,
+      "topic": "Modification",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "Can my trade order fail to execute due to a technical issue from FinX's side?",
+      "expected_output": "Yes, orders can fail due to technical issues, particularly during periods of high volatility or system load.",
+      "context": [
+        "Orders › Order Tracking & Support\nQ: Can orders fail due to technical issues?\nA: Yes, during high volatility or system load."
+      ],
+      "chunk_id": 442,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "What exactly is an HUF demat/trading account, and what's the benefit of opening one over a normal individual account with Choice FinX?",
+      "expected_output": "An HUF account is opened in the name of a Hindu Undivided Family, not an individual, allowing the family to jointly manage and invest its shared assets under one account rather than through individual holdings.",
+      "context": [
+        "Onboarding › HUF Account Opening\nQ: What is an HUF Account?\nA: A Hindu Undivided Family (HUF) account is opened in the name of a family, not an individual, to manage joint family assets and investments."
+      ],
+      "chunk_id": 94,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Is it possible to fund my Choice trading account using a bank account that isn't registered with it, and if so, how would I go about doing that?",
+      "expected_output": "You must transfer funds from the bank account linked to your Choice Trading Account. To use a different bank account, first add it as a secondary account (ensuring you are the sole or joint holder), then you can Deposit/PayIn from that account.",
+      "context": [
+        "Funds › Payin And Payout and mode of payment\nQ: What if client wan to transfer fund from bank a/c that are not linked to client choice trading account.\nA: Client will have to transfer (Deposit/PayIn) the funds from the bank account that is linked with your Choice Trading Account.\nIf you wish to transfer (Deposit/PayIn) from your other bank account, you should add that bank as a secondary account and transfer (Deposit/PayIn) the money from that account, but you should be the sole or joint account holder in that account."
+      ],
+      "chunk_id": 880,
+      "topic": "Funds",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "I sent funds to my trading account through RTGS just now, what details should I share so it gets credited to my account?",
+      "expected_output": "Share the following details with b.accounts@choiceindia.com so the transaction can be verified and credited to your account:\n\n1. Client Name & Mobile Number\n2. Client ID\n3. Segment (Equity/Commodity)\n4. Deposited Amount\n5. Deposit reference number (for RTGS/NEFT)",
+      "context": [
+        "Funds › Payin And Payout and mode of payment\nQ: How can client do payin through NEFT and RTGS?\nA: This will open up the page showing the details of Choice Broking’s bank account details for Equity / Commodity for NEFT / RTGS transfer.\nImportant Note: - After you make the deposit, please the below details to b.accounts@choiceindia.com for us to track the transaction:\ni.        Client Name & Mobile Number\nii.        Client ID\niii.        Segment (Equity/Commodity)\niv.        Deposited Amount\nv.        Deposit reference number in case of RTGS/NEFT\nvi.        Cheque Deposit slip & Cheque Copy in case of cheque deposit\nNote: - The amount will only be credited into your account once the transaction is verified"
+      ],
+      "chunk_id": 886,
+      "topic": "Funds",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "Who's actually in charge of handling risk management at Choice? Is there a specific team or committee that oversees this as per company policy or regulations?",
+      "expected_output": "Risk management at Choice is monitored by the RMS Team and the Risk Committee, in accordance with internal and regulatory guidelines.",
+      "context": [
+        "RMS › General Risk Awareness\nQ: Who monitors risk management at Choice?\nA: Risk is monitored by the RMS Team and Risk Committee as per internal and regulatory guidelines."
+      ],
+      "chunk_id": 757,
+      "topic": "RMS",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "My father passed away recently and he had some shares sitting in his demat account with Choice FinX. What's the process to get those transferred into my name?",
+      "expected_output": "The shares can be transferred to you as the nominee or legal heir through the transmission process. We're sorry for your loss.",
+      "context": [
+        "DP related › TRANSMISSION OF SHARES (DEATH CASES)\nQ: My father has passed away. What happens to his shares?\nA: We’re sorry for your loss. The shares can be transferred to the nominee or legal heirs through the transmission process."
+      ],
+      "chunk_id": 329,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "I invited a friend through the FinX Refer & Earn program — what does he need to do before I get my referral bonus, and how long does the credit usually take?",
+      "expected_output": "Your friend needs to complete required actions such as activating his account or making his first trade before your referral bonus is credited. The specific time frame for crediting isn't detailed, but rewards are processed after these actions are completed.",
+      "context": [
+        "Finx features › Refer & Earn\nQ: When are referral rewards credited?\nA: Rewards are credited after the referral completes required actions like account activation or first trade."
+      ],
+      "chunk_id": 928,
+      "topic": "Finx features",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "Once I close my demat account, will AMC charges still apply after that?",
+      "expected_output": "No, once you close your demat account, future AMC charges will stop applying.",
+      "context": [
+        "Charges › AMC (Inactive / Active / Corporate)\nQ: Can I avoid AMC by closing my account?\nA: Yes, closing the demat account will stop future AMC charges."
+      ],
+      "chunk_id": 1015,
+      "topic": "Charges",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "What does it actually mean when a company announces a dividend or bonus shares, and how would that show up as a corporate action in my demat account?",
+      "expected_output": "A dividend or bonus share announcement is a type of corporate action—an event initiated by a company that affects its shareholders. When this happens, it will reflect in your demat account as either a cash credit (for dividends) or additional shares credited (for bonus issues), based on your shareholding as of the record date set by the company.",
+      "context": [
+        "Corporate action › Corporate Action – Basics\nQ: What is a Corporate Action?\nA: A corporate action is an event initiated by a company that affects its shareholders, such as dividends, bonus issues, buybacks, or stock splits."
+      ],
+      "chunk_id": 675,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "It's been longer than the usual TAT and my segment activation request is still stuck at 'in progress' on Choice FinX. What should I do now?",
+      "expected_output": "If your segment activation request is stuck at 'in progress' beyond the usual TAT on Choice FinX, you should reach out to Choice Broking's support team to check the status, especially if you submitted your request via the offline process (physical application form with required documents).",
+      "context": [
+        "Modification › Why it is showing in progress after tat?\nQ: Offline process for segments activation?\nA: The offline process for segment activation in Choice Broking involves submitting a physical application form along with the required documents. It is typically used by individuals who prefer a non-digital method, as well as for non-individual accounts like HUFs or corporations."
+      ],
+      "chunk_id": 222,
+      "topic": "Modification",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "If I'm moving shares of several different companies out of my demat account in one go, do I get billed individually for each ISIN, or is it a single combined charge?",
+      "expected_output": "You are billed individually for each ISIN—charges apply separately for every ISIN transferred, not as a single combined charge.",
+      "context": [
+        "Charges › DIS Booklet & Share Transfer\nQ: What does “per ISIN” mean in share transfer charges?\nA: ISIN is a unique identification number for each security. Charges apply separately for each ISIN transferred."
+      ],
+      "chunk_id": 1051,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "Where do I go in the FinX app to download my Ledger and P&L statements? Can you walk me through which options to tap, like More, Reports, choosing the date range, and then Export?",
+      "expected_output": "Go to **More → Reports**, then select **Ledger** or **P&L** (or **Tax**), choose the desired period/date range, and tap **Export**.",
+      "context": [
+        "Finx features › Security & Settings\nQ: How to download reports\nA: Go to More  →  Reports → Ledger , P&l , Tax  → Select period according to your preference   → Export ."
+      ],
+      "chunk_id": 925,
+      "topic": "Finx features",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "I already have a demat account with another broker — can I still open a new one with Choice FinX using the same PAN card?",
+      "expected_output": "Yes, you can open an Individual Demat Account with multiple brokers, including Choice FinX, but all accounts will be linked to your same PAN.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: Can I open an Individual Demat Account with multiple brokers?\nA: Yes, you can open accounts with multiple brokers or DPs, but all will be linked to your same PAN."
+      ],
+      "chunk_id": 69,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "If I don't want to be part of an upcoming merger, can I just sell my shares beforehand through my FinX account instead?",
+      "expected_output": "Yes, you can sell your shares before the merger through your FinX account if you don't want to participate. In some cases, a cash buyout option may also be available instead of share conversion.",
+      "context": [
+        "Corporate action › Merger / Demerger\nQ: What happens if I don’t want to participate in a merger?\nA: If you do not wish to participate in the merger, you may be able to sell your shares before the merger. In some cases, a cash buyout option might be available instead of share conversion."
+      ],
+      "chunk_id": 734,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "I submitted a withdrawal request through the FinX app, how many days will it take for the amount to reflect in my linked bank account?",
+      "expected_output": "The client will receive the payout in their registered bank on time, provided they do not trade after requesting the payout.",
+      "context": [
+        "Funds › Payin And Payout and mode of payment\nQ: When client will get payout in his registered bank on time after request for payout through choice app?\nA: client will get payout in his registered bank on time If he does not trade after requesting for payout."
+      ],
+      "chunk_id": 879,
+      "topic": "Funds",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "After submitting my IPO application, what happens next before the shares actually show up in my demat account?",
+      "expected_output": "After the subscription period closes, the allotment process is finalized. For the shares allotted to you, the blocked funds in your account are debited, and the corresponding shares are then credited to your demat account.",
+      "context": [
+        "SLBM › IPO Process Understanding\nQ: What happens after IPO application?\nA: After subscription closes, allotment is finalized, and blocked funds are debited for allotted shares."
+      ],
+      "chunk_id": 585,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "Hi, I'm trying to set up a multileg options trade on FinX but can't locate that option. Where do I find it?",
+      "expected_output": "You can find the option strategy execution details for setting up a multileg trade in Choice FinX via the link provided in the support resources for this feature.",
+      "context": [
+        "Orders › Basic Question Bank\nQ: Where is the option to execute multileg strategy in Choice Finx?\nA: your strategy-related concern. We would like to inform you that we have shared the link below where you can check the option strategy execution details:"
+      ],
+      "chunk_id": 448,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "I added funds while opening my account but the amount still hasn't reflected in the FinX app, what should I do now?",
+      "expected_output": "Please share your bank account statement to care@choiceindia.com — our team will validate your account and update the funds.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: added funds while account opening not updated in application\nA: if you have added funds and not able to see the same please share yiur bank account statement to care@choiceindia.com our team will validate your account and update funds"
+      ],
+      "chunk_id": 43,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "On StrikeX, how many market depth levels are available to view?",
+      "expected_output": "StrikeX provides 20-level market depth with real-time order book visibility.",
+      "context": [
+        "StrikeX › Key Features\nQ: What market depth is available?\nA: StrikeX provides 20-level market depth with real-time order book visibility"
+      ],
+      "chunk_id": 636,
+      "topic": "StrikeX",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "My joint demat account application got rejected, what could be the possible reasons for this?",
+      "expected_output": "Common reasons for rejection include: name mismatch between PAN and Aadhaar, invalid or expired address proof, missing signatures, mismatch in bank proof, or improperly completed IPV (In-Person Verification).",
+      "context": [
+        "Onboarding › Joint Account Opening\nQ: What are Common Rejections or Issues\nA: ●        Name mismatch in PAN and Aadhaar.\n●        Invalid or expired address proof.\n●        Missing signatures.\n●        Mismatch in bank proof.\n●        IPV not completed properly."
+      ],
+      "chunk_id": 177,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "Is there any chance Choice FinX could transfer or sell off the shares sitting in my demat account without me authorizing it first?",
+      "expected_output": "No, shares can only be debited from your demat account with your authorization, as per regulatory guidelines.",
+      "context": [
+        "DP related › DP BASICS & DEMAT ACCOUNT\nQ: Will FinX ever misuse my demat shares?\nA: No, shares can only be debited with your authorization as per regulatory guidelines."
+      ],
+      "chunk_id": 281,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "If my margin falls short in my trading account, will my existing positions get squared off automatically?",
+      "expected_output": "Yes. If there is insufficient margin in your trading account, your open positions may be liquidated (squared off) automatically to cover the margin shortfall.",
+      "context": [
+        "RMS › Auto Square-Off & Projected Risk\nQ: What if I don’t have sufficient margin?\nA: All open positions may be liquidated to cover margin shortfall."
+      ],
+      "chunk_id": 788,
+      "topic": "RMS",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "I just completed my onboarding process, so how much time will it take before my demat account gets activated?",
+      "expected_output": "Your demat account will be activated within 24–48 business working hours after completing onboarding.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: Account opening\nA: account opening happens in 24-48 business workinh hours post onboarding"
+      ],
+      "chunk_id": 41,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "As a retail investor, is there a lock-in period before I can sell my allotted shares, or am I free to sell them on the very day they get listed?",
+      "expected_output": "No, there is no lock-in period for retail investors—you can sell your allotted shares on the very day they get listed.",
+      "context": [
+        "SLBM › Retail Investor Category\nQ: Is there any lock-in period for retail investors?\nA: No, there is no lock-in period for retail investors. You can sell on listing day."
+      ],
+      "chunk_id": 579,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "I heard FinX has a Hedge feature that uses offsetting positions to reduce risk. Can you explain how that actually protects my portfolio?",
+      "expected_output": "The Hedge feature protects your portfolio by taking offsetting positions—if one investment loses value, the offsetting position gains value, balancing out potential losses and managing overall risk.",
+      "context": [
+        "Finx features › Hedge Feature\nQ: What is the Hedge feature?\nA: It helps manage risk by taking offsetting positions to protect your portfolio."
+      ],
+      "chunk_id": 918,
+      "topic": "Finx features",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "One of my stocks just declared a bonus issue - does that impact my F&O positions or change how much my shares are worth?",
+      "expected_output": "**Answer:** A bonus issue causes the share price to fall in proportion to the bonus ratio, but it does not change the overall value of your holdings. F&O positions are also adjusted accordingly to reflect the bonus issue, ensuring no change in the net value.",
+      "context": [
+        "Corporate action › Bonus Issue\nQ: What is the impact of a bonus issue on equity holdings and F&O positions?\nA: The share price falls in the ratio of the bonus allotment. However, this does not affect the overall value of holdings."
+      ],
+      "chunk_id": 710,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 0.75
+    },
+    {
+      "input": "I noticed a transaction charge on my account along with brokerage—are these two different fees or is it the same thing counted twice?",
+      "expected_output": "They are two different fees, not the same charge counted twice. Brokerage is charged by FinX, while transaction charges are charged by the exchange.",
+      "context": [
+        "Charges › Transaction / Exchange / SEBI / GST charges\nQ: Are transaction charges different from brokerage?\nA: Yes, brokerage is charged by FinX, while transaction charges are charged by the exchange."
+      ],
+      "chunk_id": 1058,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "For SLBM share lending, what's the margin requirement if I go for early pay-in compared to settling on T+1?",
+      "expected_output": "**0% margin for early pay-in; 25% margin for T+1 settlement.**",
+      "context": [
+        "SLBM › How SLBM Works – Timeline\nQ: What margin is required from the lender?\nA: The lender provides 0% margin on early pay-in and 25% margin on T+1."
+      ],
+      "chunk_id": 540,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "I just paid for an NCD issue application, so how many days will it take for the debenture units to show up in my demat account?",
+      "expected_output": "NCD units will be credited to your demat account after successful payment and processing, as per the issuer’s allotment timeline.",
+      "context": [
+        "SLBM › NCD\nQ: When will the NCD be allotted to the client?\nA: After successful payment and processing, the NCD units will be credited to the client’s demat account as per the issuer’s allotment timeline."
+      ],
+      "chunk_id": 622,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.1
+    },
+    {
+      "input": "For compulsory corporate actions like bonus shares or splits, will my demat account get updated automatically or do I have to submit a request myself?",
+      "expected_output": "Yes, for mandatory corporate actions like bonus shares or stock splits, updates reflect automatically in your demat account—no request needs to be submitted.",
+      "context": [
+        "Corporate action › General Investor Queries\nQ: Will corporate actions reflect automatically in demat?\nA: Yes, for mandatory actions, updates reflect automatically in demat accounts."
+      ],
+      "chunk_id": 751,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "It's been a long time since I last placed any trades and I'm worried my demat account may have become dormant - what steps do I need to follow to reactivate it?",
+      "expected_output": "To reactivate your dormant Demat Account, you need to submit a reactivation request along with KYC verification.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: What happens if I don’t use my Demat Account for a long time?\nA: The account may become inactive or dormant, and reactivation will require a request and KYC verification."
+      ],
+      "chunk_id": 70,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "I want to transfer my shares from my CDSL demat account to an NSDL account through Easiest, but how does this token number system work to authorize the transfer?",
+      "expected_output": "When you submit a transfer request via CDSL Easiest (Transaction → Create, selecting your trusted NSDL account, ISIN, quantity, and Inter-Depository Transfer), a Token Number is generated. This token is sent to your registered mobile/email, and you must enter it on the authorization screen to confirm the transaction. The transfer is processed only after successful token validation—without this confirmation, the request remains incomplete. Ensure your mobile/email is updated to receive the token.",
+      "context": [
+        "DP related › CDSL EASI / EASIEST & NSDL SPEED-e\nQ: Process if client wants to transfer shares from CDSL account to NSDL account\nA: For transferring shares from your CDSL demat account to an NSDL demat account through CDSL Easiest, you are required to generate a transaction token number to authorize the transfer.\n\nProcess to Transfer Shares (with Token Generation):\n\nLogin to CDSL Easiest using your credentials.\n\nGo to “Transaction” → “Create”.\n\nSelect the trusted NSDL account (ensure it is already added and approved).\n\nEnter the required details:\n\nISIN\n\nQuantity\n\nSelect Inter-Depository Transfer\n\nSubmit the transaction request.\n\nAfter submission, a Token Number will be generated.\n\nToken Authorization:\n\nThe generated Token Number is sent to your registered mobile/email\n\nEnter the Token Number on the authorization screen to confirm the transaction\n\nOnce validated, the transfer request will be successfully processed\n\nImportant Points:\n\nToken generation is mandatory to authenticate the transaction\n\nWithout token confirmation, the request will remain incomplete\n\nEnsure your mobile/email is updated to receive the token"
+      ],
+      "chunk_id": 304,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "What's the reason I have to keep my address updated for my Choice demat account?",
+      "expected_output": "Keeping your address updated in your Choice demat account is essential for regulatory compliance, security, and ensuring you receive important communications, including providing a DIS book at your official address. An outdated address can lead to problems such as missing dividend checks or account-level restrictions.",
+      "context": [
+        "Modification › How to delete or inactive a bank account\nQ: Why there is need to modify address?\nA: Keeping your address updated in your Choice demat account is essential for several reasons, including regulatory compliance, security, and ensuring you receive important communications, Providing a DIS book in your official address. An outdated address can lead to various problems, from missing dividend checks to account-level restrictions."
+      ],
+      "chunk_id": 192,
+      "topic": "Modification",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "In case I pass away, what's the process for my nominee to claim the shares held in my Choice FinX demat account?",
+      "expected_output": "Shares are transmitted to the nominee or legal heirs through the transmission process.",
+      "context": [
+        "DP related › DP BASICS & DEMAT ACCOUNT\nQ: What happens to my shares if I pass away?\nA: Shares are transmitted to the nominee or legal heirs through the transmission process."
+      ],
+      "chunk_id": 277,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "When I try to log in it says 'User suspended, kindly contact support' - why would this happen (like a bank/payout problem or some compliance flag) and how do I get it fixed?",
+      "expected_output": "Your account is suspended due to either a **Bank Issue** or a **Compliance Issue**:\n\n- **Bank Issue:** If a payout was returned due to an incorrect IFSC code, your ID gets suspended. Fix this by updating your bank details via the Bank Modification process on the app or website. Once the payout is credited successfully, the Payout Team will remove the suspension.\n\n- **Compliance Issue:** If suspicious trades are identified, the account is suspended. It will be reactivated after verification by the compliance team.",
+      "context": [
+        "Login › Login Issues & Error Handling\nQ: I am getting “User suspended, kindly contact support”.\nA: Your account is suspended due to either a Bank Issue or a Compliance Issue.\n\nBank Issue:\nIf payouts were returned due to incorrect IFSC, your ID gets suspended. Please update your bank details via the Bank Modification process on the app or website. Once payout is credited successfully, the Payout Team will remove the suspension.\n\nCompliance Issue:\nIf suspicious trades are identified, the account is suspended. After verification by the compliance team, the account will be reactivated."
+      ],
+      "chunk_id": 818,
+      "topic": "Login",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "Is it possible for me and my spouse to set up a joint demat account through FinX?",
+      "expected_output": "Yes, you and your spouse can set up a Joint Account through FinX, as it allows two or more individuals to open an account together and operate it as per their agreed mode of operation (e.g., anyone or survivor, jointly, etc.).",
+      "context": [
+        "Onboarding › Joint Account Opening\nQ: What is a Joint Account?\nA: A Joint Account is an account opened by two or more individuals together, allowing all holders to operate it as per the agreed mode of operation (e.g., anyone or survivor, jointly, etc.)"
+      ],
+      "chunk_id": 172,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "I'd like to invest in some unlisted stocks through Choice FinX - how do I get started with this and is there a minimum investment amount required?",
+      "expected_output": "To invest in unlisted shares, email unlisted@choiceindia.com with your Client Master List (CML), script name, and desired quantity. The Unlisted Desk will then share bank details for payment.\n\nMinimum investment: ₹1 lakh for a single script, ₹3 lakh for a basket. Note that the buying price is based on the date your payment is received.",
+      "context": [
+        "SLBM › Unlisted Shares\nQ: How to purchase unlisted shares\nA: We offer trading in unlisted shares through our dedicated Unlisted Desk.\n\nTo initiate a trade in this segment, kindly send an email to unlisted@choiceindia.com with the following details:\n\n1️⃣ Soft copy of your Client Master List (CML)\n2️⃣ Script name\n3️⃣ Quantity you wish to trade\n\nInvestment Criteria:\n- Minimum investment for a single script: ₹1 lakh\n- Minimum investment for a basket: ₹3 lakh\n\nOnce your request is received, the Unlisted Desk will share the bank details for payment.\n\nPlease note:\nThe buying price will be based on the payment date — i.e., the price applicable on the day your payment is received."
+      ],
+      "chunk_id": 599,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "My order keeps getting frozen because it exceeds the quantity limit under RMS. Can I split it into smaller orders manually, or does FinX offer an Iceberg/order slicing feature to push it through?",
+      "expected_output": "Yes—you can split the order manually into smaller quantities, or use FinX's Iceberg (order slicing) feature where available to work within RMS quantity/freeze limits.",
+      "context": [
+        "RMS › Order Quantity & Freeze Limits\nQ: Auto Square-Off & Projected Risk\nA: By splitting orders manually or using Iceberg (order slicing) where available."
+      ],
+      "chunk_id": 784,
+      "topic": "RMS",
+      "synthetic_input_quality": 0.75
+    },
+    {
+      "input": "Does FinX charge a minimum brokerage amount on every trade I place?",
+      "expected_output": "No, FinX does not charge a minimum brokerage or minimum contract note charge on any trade.",
+      "context": [
+        "Charges › BROKERAGE\nQ: Does FinX charge minimum brokerage per trade?\nA: No, FinX does not levy any minimum contract note or minimum brokerage charges."
+      ],
+      "chunk_id": 978,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "Will my stop-loss order definitely execute at the exact price I set if the market gets really volatile?",
+      "expected_output": "No. During fast, volatile market movements, stop-loss or limit orders may not execute as expected, so they cannot guarantee execution at the exact price you set.",
+      "context": [
+        "RMS › Basic Market Risks\nQ: Can stop-loss or limit orders always protect me?\nA: No. During fast market movements, stop-loss or limit orders may not execute as expected."
+      ],
+      "chunk_id": 760,
+      "topic": "RMS",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "By what time do I need to close out my intraday derivatives positions so that RMS doesn't square them off automatically?",
+      "expected_output": "You need to square off your intraday derivatives positions on or before 3:15 pm to avoid RMS from taking an action.",
+      "context": [
+        "Orders › Basic Question Bank\nQ: By what time one needs to square off the position under Derivatives Intraday?\nA: One has to clear off the Intraday Positions on or before 3:15 pm to avoid RMS from taking an action."
+      ],
+      "chunk_id": 457,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.4
+    },
+    {
+      "input": "I want to update my address linked to my demat/trading account — what documents will you accept as proof for this change?",
+      "expected_output": "You can submit any one of the following as address proof: Aadhaar card, Passport, Voter ID card, Driving license, Utility bills (electricity, gas, or telephone, not older than three months), Bank statement or passbook with transactions from the last three months, or a Registered rent agreement.",
+      "context": [
+        "Modification › How to delete or inactive a bank account\nQ: What documents we need to upload while modify address?\nA: When updating your address, you can typically use any of the following as valid documents: \nAddress proof documents-\n•        Aadhaar card \n•        Passport \n•        Voter ID card \n•        Driving license \n•        Utility bills (such as electricity, gas, or telephone bills) that are not more than three months old. \n•        Bank statement or passbook with transactions from the last three months. \n•        Registered rent agreement."
+      ],
+      "chunk_id": 190,
+      "topic": "Modification",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "What happens if I fail to clear my margin shortfall — will my pledged shares really be sold off by Choice FinX?",
+      "expected_output": "Yes — if a margin shortfall or non-payment occurs, your pledged shares can be invoked (sold) by Choice FinX to recover the amount due.",
+      "context": [
+        "DP related › PLEDGE / UNPLEDGE / INVOCATION\nQ: What is invocation of pledge?\nA: Invocation happens when pledged shares are sold due to margin shortfall or non-payment."
+      ],
+      "chunk_id": 373,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "Does using the hedge feature on FinX come with any extra costs, and if so, what charges should I expect?",
+      "expected_output": "Yes, using the hedge feature may involve extra costs, specifically trading or derivative-related charges.",
+      "context": [
+        "Finx features › Hedge Feature\nQ: Is hedging chargeable?\nA: Yes, hedging may involve trading or derivative-related charges."
+      ],
+      "chunk_id": 920,
+      "topic": "Finx features",
+      "synthetic_input_quality": 0.3
+    },
+    {
+      "input": "I'm an NRI staying overseas and would like to set up a trading account with Choice FinX - what documents do I need to provide?",
+      "expected_output": "To open an NRI account, you need: 1) Completed account opening form with photograph, 2) PAN card copy, 3) Overseas address proof (latest 2 months), 4) Indian address proof if applicable (latest 2 months), 5) Cancelled cheque/bank statement showing NRE/NRO account type, 6) PIS permission letter (for NRE account), 7) Valid Visa/Passport/OCI/PIO/Foreign Resident/Employment card copy, 8) Post Box Declaration (for UAE Gulf countries), 9) TIN number (excluding gulf countries), 10) FATCA declaration, 11) FEMA declaration, 12) CDC Certificate (for Seafarers), 13) Contract/Agreement copy (for Seafarers). Foreign language documents require English translation, and all documents must be attested by a Foreign Notary Public, Court Magistrate, Judge, Multinational Foreign bank, or Indian/Foreign Embassy/Consulate General.",
+      "context": [
+        "Checklist of Account opening › Account opening\nQ: What documents are needed to open a NRI - Non Resident account account?\nA: 1.        Complete account opening form with front facing passport size photograph\n2.        Pan card copy required (Note – Fill up form as per pan site name only)\n3.        Overseas (Foreign) address proof required (latest two month), i.e. bank statement, Driving license, Utility bill, etc.\n4.        Indian address proof (if required as communication address) (latest two month)\n5.        Cancelled cheque or bank statement copy required for bank proof (with mentioning NRE/NRO account type)\n6.        Client PIS permission letter required (for NRE account)\n7.        Client valid Visa copy (mandatory) / Passport copy (mandatory)/ OCI copy / PIO copy / Foreign Resident card/ Employment card required (Any one)\n8.        Client Post Box Declaration required for UAE Gulf Countries\n9.        Client TIN (Tax identification number) number required (on Aof pg.no.2) {excluding gulf countries}\n10.        Client FATCA declaration completely fill up required (on Aof pg.no.2)\n11.        Client FEMA declaration required\n12.        CDC Certificate copy required (for Seafarer client)\n13.        Latest and valid Contract / Agreement copy required (for Seafarer client)\n14.        Note - If any proof of address is in a foreign language, then translation into English shall be required.\n15.        Note - Foreign Notary attestation required all supporting documents OR Client passport latest immigration page required for arrival in India ---- As per Sebi circular Nov-2019/Operational Guidelines\n\n16.        Below are additional documents required for For Institution only trading accounts :- \n- Complete account opening form\n- CP code letter \n- Existing active CML copy\n- Both SB and PIS Securities bank account proofs with UCC codes \n- Kyc proof (as mention above)\n\nNote – All above documents should be attested by Foreign Notary Public, Court Magistrate, Judge, Multinational Foreign banks or Indian or Foreign Embassy / Consulate General."
+      ],
+      "chunk_id": 182,
+      "topic": "Checklist of Account opening",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "At what time do my options contracts actually expire on the expiry date in StrikeX?",
+      "expected_output": "Options contracts on StrikeX expire at 3:30 PM on the expiry day.",
+      "context": [
+        "StrikeX › Expiry & Settlement\nQ: When do options expire?\nA: At 3:30 PM on expiry day."
+      ],
+      "chunk_id": 662,
+      "topic": "StrikeX",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "What's the difference between an OFS and an IPO or FPO? How do they work differently on the FinX platform?",
+      "expected_output": "OFS involves existing shareholders selling already-issued shares with no change in company capital, no shareholder dilution, and typically completes in one day. IPO/FPO involves the company issuing new shares to raise capital, which increases company capital, dilutes existing shareholders, and typically takes about 3 days to complete. Note: An IPO can include both an Offer for Sale and a Fresh Issue component.\n\nRegarding platform-specific mechanics on FinX, the provided context does not include information on how these processes differ on the FinX platform.",
+      "context": [
+        "SLBM › OFS ( OFFER FOR SALE )\nQ: What is the Difference Between an OFS and IPO/FPO?\nA: Here's a breakdown of the key differences between Offer for Sale (OFS), Initial Public Offering (IPO), and Follow-on Public Offering (FPO): \n\n1. Purpose: \nOFS: Sell existing shares by existing shareholders (promoters or large investors) \n\nIPO/FPO: Issue new shares by the company to raise capital \n\n2. Impact on Company Capital: \nOFS: No change in company capital \n\nIPO/FPO: Increase in company capital (through issuing new shares) \n\n3. Duration: \nOFS: Typically a one-day event \n\nIPO/FPO: Typically takes 3 days to complete \n\n4. Shareholder Dilution: \nOFS: No dilution of existing shareholder ownership \n\nIPO/FPO: Dilution occurs as new shares are issued, decreasing existing shareholder ownership percentages \n\nNote: An IPO can have up to 2 components, i.e. Offer for Sale or Fresh Issue. In case of a fresh issue, new shares are issued and the company capital increases. But in the case of OFS, no new shares are issued, and only existing shares are traded."
+      ],
+      "chunk_id": 597,
+      "topic": "SLBM",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "For options trading, is brokerage charged on both the buy and sell sides, or only when I exit the position?",
+      "expected_output": "Brokerage is charged on both the buy and sell sides of options trading, not only when you exit the position.",
+      "context": [
+        "Charges › BROKERAGE\nQ: Is brokerage charged on option buy and sell both?\nA: Yes, brokerage applies on both buy and sell option trades."
+      ],
+      "chunk_id": 965,
+      "topic": "Charges",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "For SLBM lending transactions, can I make the payment before receiving the confirmation sheet from Choice FinX?",
+      "expected_output": "No. The client should not initiate payment until the deal sheet is received from the NCD team.",
+      "context": [
+        "SLBM › NCD\nQ: Can the client make payment before receiving the deal sheet?\nA: No. The client should not initiate payment until the deal sheet is received from the NCD team."
+      ],
+      "chunk_id": 617,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "I heard SLBM is open to retail investors, proprietors, and institutions - can I take part in it as a retail investor?",
+      "expected_output": "Yes, retail investors are permitted to participate in SLBM.",
+      "context": [
+        "SLBM › Key Features\nQ: Who can participate in SLBM?\nA: Retail investors, proprietors, and institutional investors are permitted."
+      ],
+      "chunk_id": 535,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "Can I set up a demat account for my HUF using the same PAN card that's linked to the Karta's individual account?",
+      "expected_output": "No. The HUF must have a separate PAN distinct from the Karta's individual PAN; the Karta's PAN cannot be used for the HUF's demat account.",
+      "context": [
+        "Onboarding › HUF Account Opening\nQ: Can the PAN of the Karta be used for the HUF account?\nA: No. The HUF must have a separate PAN distinct from the Karta’s individual PAN."
+      ],
+      "chunk_id": 103,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.95
+    },
+    {
+      "input": "Can you guide me through the steps to purchase ETF units using the FinX app? I'm new to this and not sure where to begin.",
+      "expected_output": "Log in to the Choice FinX app, go to the Search section, search for the ETF scheme you want, and place your investment. If you face any issues, share a screenshot for assistance.",
+      "context": [
+        "Mutual Fund\nQ: How can I invest in ETFs through Choice FinX?\nA: Login to the Choice FinX app and use the Search section to search for ETF schemes and place your investment. If you face any issue, share a screenshot for assistance."
+      ],
+      "chunk_id": 11,
+      "topic": "Mutual Fund",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "If I place an order during the Post-Closing Session, what price will it get executed at?",
+      "expected_output": "Your order will execute at the closing price of the stock.",
+      "context": [
+        "Orders › Post-Closing Session\nQ: At what price do Post-Closing orders execute?\nA: At the closing price of the stock."
+      ],
+      "chunk_id": 429,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "I have a demat account under my HUF - for AMC billing, does that count as an individual account or does it fall under the corporate category?",
+      "expected_output": "HUF accounts are treated as individual accounts for AMC billing purposes, not corporate.",
+      "context": [
+        "Charges › AMC (Inactive / Active / Corporate)\nQ: Is HUF treated as corporate or individual?\nA: HUF accounts are treated as individual accounts for AMC purposes."
+      ],
+      "chunk_id": 1014,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "What happens to my stocks if I don't clear my MTF margin shortfall and just leave it as is?",
+      "expected_output": "If you don't clear your MTF margin shortfall, you'll first be asked to maintain sufficient funds in your ledger to cover it. If the shortfall persists for 3 consecutive days, your MTF stock positions may be automatically liquidated—to the extent of the shortfall amount—to restore the required margin.",
+      "context": [
+        "MTF\nQ: What is MTF shortfall, and what happens if it is not paid?\nA: MTF (Margin Trading Facility) shortfall occurs when the client’s MTF stock position incurs a loss, and the loss reduces the margin available in the account below the required level. In other words, it is the amount the client needs to deposit to maintain the required margin for the MTF position.\nIf the shortfall is not cleared, the following steps occur:\n1.\tThe client is requested to maintain sufficient funds in their ledger to cover the shortfall.\n2.\tIf the shortfall continues for 3 consecutive days, the MTF positions may be automatically liquidated to cover the shortfall.\n3.\tThe liquidation is done equivalent to the shortfall amount to ensure the account meets margin requirements.\nMTF shortfall usually happens when:\n•\tA client holds MTF stocks that are experiencing continuous MTM (Mark-to-Market) losses.\n•\tTo adjust this loss, the broker must maintain margin with the exchange, and if the client’s account does not have sufficient funds, a shortfall arises.\nClearing the MTF shortfall on time helps avoid forced liquidation and additional risks."
+      ],
+      "chunk_id": 23,
+      "topic": "MTF",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "I'd like to transfer my securities to a different broker and close out this demat account—what's the process for submitting that request through FinX Web?",
+      "expected_output": "To submit a Closure cum Transfer request via Choice FinX Web: Log in, click on Profile, select Support, choose Subject as \"Account Closure,\" select Type as \"Closure cum Transfer,\" mention the reason, and click Submit.",
+      "context": [
+        "Account Closure › Closer cum transfer\nQ: Step 1\nA: Kindly raise your Closure cum Transfer request through the Choice FinX Web by following the steps below:\n\nLog in to Choice FinX Web\n\nClick on Profile\n\nSelect Support\n\nChoose Subject: Account Closure\n\nSelect Type: Closure cum Transfer\n\nMention the Reason\n\nClick on Submit"
+      ],
+      "chunk_id": 864,
+      "topic": "Account Closure",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "Is there a minimum balance requirement for my Demat account, or will I get charged even if I keep it empty?",
+      "expected_output": "No, there is no minimum balance requirement for a Demat Account. However, annual maintenance charges (AMC) may apply regardless of the balance.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: Is it necessary to maintain a minimum balance in a Demat Account?\nA: No, there is no minimum balance requirement, but annual maintenance charges (AMC) may apply."
+      ],
+      "chunk_id": 68,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "Is there a way to transfer my shares digitally instead of using a paper DIS slip?",
+      "expected_output": "Yes, CDSL EASIEST allows you to transfer shares online without using physical DIS slips.",
+      "context": [
+        "DP related › CDSL EASI / EASIEST & NSDL SPEED-e\nQ: What is CDSL EASIEST?\nA: CDSL EASIEST allows you to transfer shares online without using physical DIS slips."
+      ],
+      "chunk_id": 284,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "My trade got executed despite a shortfall in my account balance, and now my ledger shows a negative amount. What can I do to prevent my holdings from being auto-sold?",
+      "expected_output": "To prevent auto-liquidation, either sell your preferred stocks before the aging date or add funds to restore a sufficient ledger balance.",
+      "context": [
+        "Orders › Basic Question Bank\nQ: Trade executed beyond cash limit\nA: We have checked and found that the trade was executed beyond the available cash limit, resulting in a negative ledger balance.\n\nTo avoid auto-liquidation, please ensure you either sell your preferred stocks before the aging date or add funds to maintain a sufficient ledger balance. This will help prevent automatic liquidations and allow you to manage your account more effectively."
+      ],
+      "chunk_id": 466,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "Can you explain what the Quick Strike Selection tool in StrikeX does? I'm trying to understand how it helps me spot ATM, ITM, and OTM strikes, check liquidity, get delta-based strike recommendations, and optimize premiums.",
+      "expected_output": "Quick Strike Selection is a StrikeX feature that highlights ATM, ITM, and OTM strikes, shows liquidity levels, provides delta-based strike suggestions, and helps with premium optimization.",
+      "context": [
+        "StrikeX › Key Features\nQ: What is Quick Strike Selection?\nA: It highlights ATM, ITM, OTM strikes, liquidity levels, delta-based strike suggestions, and premium optimization."
+      ],
+      "chunk_id": 634,
+      "topic": "StrikeX",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "What kind of details does the P&L report on FinX actually show, and how does that help me while filing my taxes?",
+      "expected_output": "The P&L report shows realized and unrealized profits, short-term and long-term capital gains, and trading performance across segments like Equity (Cash Segment) and F&O (Futures & Options). This helps while filing taxes because it provides the detailed profit/loss breakup needed for tax calculation based on your trading activity during a specific period.",
+      "context": [
+        "Reports › Profit & loss\nQ: What is a P&L (Profit and Loss) Report?\nA: A P&L Report (Profit and Loss Report) provides a complete summary of the client’s profit or loss generated from their trading activities during a specific period.\n\nIt helps to analyze realized and unrealized profits, short-term and long-term capital gains, and trading performance across various segments such as Equity (Cash Segment) and F&O (Futures & Options).\n\nThe report is mainly used for financial analysis, tax calculation, and performance tracking"
+      ],
+      "chunk_id": 1084,
+      "topic": "Reports",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "My options order got rejected saying new positions can't be taken a day before expiry - why does this restriction exist and what should I do now?",
+      "expected_output": "The restriction exists as per company risk management policy, which prohibits placing new buy or sell orders in options contracts one day prior to expiry, in order to mitigate risks from heightened market volatility and liquidity constraints close to expiry. You can place your order in the next expiry cycle using the same strike price contract.",
+      "context": [
+        "Orders › Basic Question Bank\nQ: Order rejected 1 day prior to expiry - near to expire\nA: Thank you for staying connected. We would like to inform you that, as per our company’s risk management policy, placing new buy or sell orders in options contracts is restricted one day prior to expiry. This restriction is in place to mitigate the risks associated with heightened market volatility and liquidity constraints close to expiry. However, you can place your order in the next expiry cycle using the same strike price contract. This policy is designed to ensure smoother trading operations and help safeguard client investments from end-of-contract fluctuations. We appreciate your understanding"
+      ],
+      "chunk_id": 473,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "When shares are transmitted to my demat account after a family member's death, is that treated as a sale, a transfer, or something else entirely?",
+      "expected_output": "Transmission is something else entirely—it is neither a sale nor a market transfer. It occurs specifically due to the death of the shareholder and does not involve any sale or transfer transaction in the market.",
+      "context": [
+        "DP related › TRANSMISSION OF SHARES (DEATH CASES)\nQ: Is transmission the same as selling or transferring shares?\nA: No, transmission occurs due to death and does not involve a sale or market transfer."
+      ],
+      "chunk_id": 331,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "If a company promoter offloads shares via an OFS, is there a cap on how many shares I can buy as a retail investor?",
+      "expected_output": "Yes. To prevent excessive concentration of shares with a single buyer, OFS rules impose a cap on the amount any one bidder (other than mutual funds) can acquire.",
+      "context": [
+        "SLBM › OFS ( OFFER FOR SALE )\nQ: Features of OFS\nA: An Offer for Sale (OFS) provides a mechanism for existing shareholders, typically with a significant stake (over 10% ownership), to offload some of their holdings in a listed company. Here's a breakdown of its key features: \n\n1. Seller Eligibility: \nOnly major shareholders or promoter groups can initiate an OFS. This helps companies comply with regulations mandating a minimum public shareholding. \n\n2. Reservations for Stability: \nTo ensure market stability, a minimum of 25% of the offered shares are reserved for insurance companies and mutual funds. \n\n3. Retail Investor Participation: \nAt least 10% of the offering is set aside for retail investors, democratising access and potentially increasing liquidity. \n\n4. Discount Potential: \nCompanies may offer discounts on the floor price (minimum acceptable price) to incentivise retail investor participation. \n\n5. Transparent Price Discovery: \nThe bidding process used in OFS allows for transparent price discovery, reflecting true market demand. \n\n6. Time-Bound Process: \nOFS is a one-day event, streamlining the process and minimizing market volatility. \n\n7. Predefined Floor Price: \nThe selling shareholder sets a floor price, ensuring a minimum return on their investment. \n\n8. Bidding Mechanism: \nInvestors can submit bids at specific prices within a designated time frame. \n\n9. Limited Allocation \nTo prevent excessive concentration of shares in a single buyer (except mutual funds), a cap is placed on the amount any one bidder can acquire. \n\nBy understanding these features, both companies and investors can leverage OFS to achieve their financial goals while promoting a transparent and efficient market."
+      ],
+      "chunk_id": 593,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "If a company I own stock in merges with another company, what happens to the shares sitting in my demat account?",
+      "expected_output": "In a merger, your existing shares are typically replaced with new shares of the merged entity or converted to cash consideration, based on the merger terms. These changes are reflected directly in your demat account, and the market value of your holdings may change depending on the terms of the merger.",
+      "context": [
+        "Corporate action › Merger / Demerger\nQ: How does a merger affect shareholders?\nA: Shareholders of the merging companies may receive new shares in the merged entity or cash consideration. The market value of their holdings could change depending on the terms of the merger."
+      ],
+      "chunk_id": 730,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "When a company announces a cash dividend, does the amount get credited directly to my linked bank account?",
+      "expected_output": "Yes. A cash dividend is paid directly to the shareholder's bank account.",
+      "context": [
+        "Corporate action › Dividend\nQ: What is a Cash Dividend?\nA: Dividend paid directly to the shareholder’s bank account."
+      ],
+      "chunk_id": 686,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "If the team I raised my query with doesn't get back to me, what's the next step? Do you guys send a follow-up reminder after some time?",
+      "expected_output": "If the concerned team doesn't respond, a reminder email is sent after a few days.",
+      "context": [
+        "UT › Follow-ups & Documentation\nQ: What if no response is received from the concerned team?\nA: A reminder email is sent after a few days."
+      ],
+      "chunk_id": 489,
+      "topic": "UT",
+      "synthetic_input_quality": 0.1
+    },
+    {
+      "input": "While opening my individual demat account, which ID proofs like Voter Card, Driving Licence, or Passport are accepted for address verification, and if my account opening is stuck, where can I find the 'View Comment' option to know why it's been delayed?",
+      "expected_output": "Voter ID, Driving Licence, and Passport are all accepted as address proof for individual demat account onboarding. If your account opening is pending, you can check the reason by looking in the \"View Comment\" section.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: What documents can be submitted as address proof during onboarding?\nA: Address proof can be provided using Voter ID, Driving Licence, or Passport.\nIf onboarding is pending, the reason can be checked in the “View Comment” section."
+      ],
+      "chunk_id": 49,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "Is stamp duty applicable when I buy shares intraday or trade in F&O on Choice FinX?",
+      "expected_output": "Yes, stamp duty applies on buy transactions across all segments, including intraday and F&O trades.",
+      "context": [
+        "Charges › Securities Transaction Tax (STT / CTT)\nQ: Is stamp duty applicable on intraday and F&O?\nA: Yes, stamp duty applies on buy transactions across all segments."
+      ],
+      "chunk_id": 943,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "The STT charge on my trades - does that actually go to Choice FinX as brokerage, or is it a government tax that's separate from your fees?",
+      "expected_output": "STT is not a brokerage charge—it is a statutory government tax and does not go to FinX.",
+      "context": [
+        "Charges › Securities Transaction Tax (STT / CTT)\nQ: Is STT your brokerage charge?\nA: No, STT is not a brokerage charge. It is a statutory tax and does not go to FinX."
+      ],
+      "chunk_id": 937,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "Is the first DIS booklet free when I open a new demat account, or will I be charged for it?",
+      "expected_output": "The first DIS booklet is issued free of cost when you open your demat account; there is no charge for it.",
+      "context": [
+        "Charges › DIS Booklet & Share Transfer\nQ: Is the first DIS booklet free?\nA: Yes, the first DIS booklet is issued free of cost when you open your demat account."
+      ],
+      "chunk_id": 1045,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "My demat account application is still pending and I need to update the ID proof I already uploaded - can I make that change before the account gets approved?",
+      "expected_output": "Yes, you can update your ID during pending onboarding. Simply go to the review page at the last step of the pending link to make the change, ensuring the verification process continues smoothly.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: Can clients update their ID during pending onboarding?\nA: Yes. Clients can update their ID during pending onboarding on the review page at the last step of the pending link. This ensures the verification process continues smoothly."
+      ],
+      "chunk_id": 29,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "I've added a second bank account to my FinX account, can withdrawals go there too, or am I stuck sending funds only to my primary bank?",
+      "expected_output": "Withdrawals can only be made to your primary bank account. Your secondary bank account can only be used to add funds, not for withdrawals.",
+      "context": [
+        "Modification › BANK MODIFICATION\nQ: -What is primary/secondady bank?\nA: In Choice Broking, your primary bank account is your main account for all transactions, including both deposits and withdrawals. Any other bank accounts you link are called secondary bank accounts, which can be used to add funds but not for withdrawals."
+      ],
+      "chunk_id": 205,
+      "topic": "Modification",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "I have a savings account that's jointly held with my spouse—can I still use it to fund an Individual Demat Account under my own name?",
+      "expected_output": "Yes, you can use the joint bank account, provided your name appears as one of the account holders on it.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: Can I use my joint bank account for an Individual Demat Account?\nA: Yes, but your name must appear as one of the account holders in the joint bank account."
+      ],
+      "chunk_id": 65,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Are there any registration fees or DP charges for signing up and using EASIEST or SPEED-e?",
+      "expected_output": "No separate registration fees for EASIEST or SPEED-e; however, applicable DP transfer charges may apply.",
+      "context": [
+        "DP related › CDSL EASI / EASIEST & NSDL SPEED-e\nQ: Are there any charges for using EASIEST or SPEED-e?\nA: There are no separate registration charges; applicable DP transfer charges may apply."
+      ],
+      "chunk_id": 306,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "For the offline demat account opening process, is self-attestation of my documents required?",
+      "expected_output": "Yes, all documents submitted offline must be self-attested by the client to verify authenticity.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: Are self-attested documents required for offline account opening?\nA: Yes, all documents submitted offline must be self-attested by the client to verify authenticity."
+      ],
+      "chunk_id": 86,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "It's been longer than the standard turnaround time and my segment activation is still pending - what should I do next, and what details does the form need (PAN, UCC, segment type, signatures for joint or HUF accounts)?",
+      "expected_output": "The form requires your personal details (name, PAN number, and UCC), the trading segment you wish to activate (Futures & Options, Commodity, or Currency), and signatures from all account holders for joint accounts or the authorized signatory (e.g., Karta) for HUF accounts.",
+      "context": [
+        "Modification › Why it is showing in progress after tat?\nQ: Steps to fill out the form?\nA: Provide your personal details, including your name, PAN number, and Unique Client Code (UCC).\nSpecify which trading segment you wish to activate (e.g., Futures & Options, Commodity, or Currency).\nEnsure the form is signed by all account holders if it is a joint account, or by the authorized signatory (such as the Karta for an HUF)."
+      ],
+      "chunk_id": 224,
+      "topic": "Modification",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "I need to change the mobile number linked to my Choice FinX account—what's the process for doing that from the app?",
+      "expected_output": "Log in to your Choice Broking account via the app, go to \"Profile > Profile Modification\" or \"Account Details,\" select \"Contact,\" and click \"Contact Modification.\" Verify your old contact number using the OTP received, then confirm the request by e-signing or entering an OTP from your Aadhaar. The updated contact details will be activated within 1–2 business days, and you can check the status in \"Account Details\" or wait for a notification.",
+      "context": [
+        "Modification › CONTANCT MODIFICATION\nQ: Process to modify the contact details through the application\nA: Step-by-step activation process:-\nLog in: Access your Choice Broking account through the mobile app or website. \nNavigate to segments: Go to the \"Profile>Profile Modification\" or \"Account Details\" section, and then select \"Contact\". \nStart activation: Click on \"Contact Modification \". \nManual upload: Old contact number verify the same with the otp been received . \nConfirm: Follow the prompts to confirm your request. You may need to e-sign or provide an OTP from your Aadhaar. \nWait for activation: The contanct details would be updated  within 1–2 business days. You can check the status in your \"Account Details\" or will receive a notification once it's complete."
+      ],
+      "chunk_id": 260,
+      "topic": "Modification",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "How does buying pre-IPO or unlisted company shares actually work through Choice FinX?",
+      "expected_output": "Unlisted shares are traded off-market rather than through an exchange: the buyer and seller agree on price and quantity, the buyer transfers funds directly to the seller, and the seller submits an off-market transfer instruction to their DP, after which the shares are credited to the buyer's demat account. Additionally, intermediaries such as wealth managers, investment bankers, or unlisted share platforms may facilitate the trade by matching buyers and sellers, verifying share authenticity, and assisting with documentation and transfer. Pre-IPO shares specifically see active trading with prices reflecting IPO expectations, and once the company lists, the shares become listed (subject to applicable lock-in rules).",
+      "context": [
+        "SLBM › Unlisted Shares\nQ: How Are Unlisted Shares Traded?\nA: 1. Off-Market Transactions (Primary Method)\nUnlisted shares are traded through off-market transfers between buyer and seller.\nProcess:\nBuyer and seller agree on the price and quantity\nBuyer transfers funds directly to the seller\nSeller submits an off-market transfer instruction to the DP\nShares are credited to the buyer’s demat account\nNo stock exchange is involved in the transaction.\n2. Through Intermediaries / Dealers\nSpecialized intermediaries facilitate trades:\nWealth managers\nInvestment bankers\nUnlisted share platforms\nThey:\nMatch buyers and sellers\nVerify share authenticity\nAssist with documentation and transfer\n3. ESOP Liquidity Programs\nEmployees of private companies can sell ESOP shares:\nTo existing investors\nDuring company-arranged buyback programs\nThrough secondary sale platforms\n4. Pre-IPO Market\nCompanies nearing IPO often see active trading in:\nPre-IPO unlisted shares\nPrices reflect IPO expectations\nAfter IPO:\nShares get listed\nLock-in rules may apply\nSettlement and Holding of Unlisted Shares\nShares are held in demat form\nCredited via off-market transfer\nReflected in demat statement as “Unlisted”\nNo T+1/T+2 settlement cycle; timeline depends on DP processing\nTaxation of Unlisted Shares (Brief)\nShort-term capital gains: Holding period ≤ 24 months\nLong-term capital gains: Holding period > 24 months\nLTCG taxed with indexation benefits\nSTT is not applicable\nRisks Associated With Unlisted Shares\nLiquidity risk (difficult to sell quickly)\nPrice transparency risk\nCorporate governance risk\nRegulatory and lock-in risk"
+      ],
+      "chunk_id": 601,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "What's the process for setting up a nominee on my Choice FinX demat account?",
+      "expected_output": "You can add or update a nominee on your demat account anytime; nomination is optional but recommended, and can be done through your Choice FinX account by submitting the nomination request as guided in the platform/app.",
+      "context": [
+        "DP related › DP BASICS & DEMAT ACCOUNT\nQ: Can I nominate someone in my demat account?\nA: Yes, nomination can be added or updated anytime."
+      ],
+      "chunk_id": 276,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "Can FinX register or activate CDSL EASIEST or NSDL SPEED-e for me directly, instead of me having to do the sign-up myself?",
+      "expected_output": "No. Registration must be initiated by the client; FinX only provides DP verification and approval.",
+      "context": [
+        "DP related › CDSL EASI / EASIEST & NSDL SPEED-e\nQ: Can FinX activate EASIEST or SPEED-e on my behalf?\nA: Registration must be initiated by the client, and FinX provides DP verification and approval."
+      ],
+      "chunk_id": 301,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "If I update my bank account details as part of my KYC correction, will my account get activated right away, or does it only activate once the payout credit confirmation comes through?",
+      "expected_output": "Account activation does not happen immediately after updating bank details; it only occurs once the payout credit confirmation is successfully received.",
+      "context": [
+        "Login › How long does KYC correction take?\nQ: Will updating bank details immediately activate my account?\nA: Account activation happens after successful payout credit confirmation."
+      ],
+      "chunk_id": 847,
+      "topic": "Login",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "Is it mandatory to activate DDPI, or can I just stick with T-PIN and OTP whenever I sell shares?",
+      "expected_output": "DDPI activation is not mandatory. You can choose to manually authorize every transaction by generating a T-PIN and entering an OTP instead. However, activating DDPI offers greater speed, security, and convenience, particularly for frequent traders.",
+      "context": [
+        "Modification › DDPI ACTIVATION\nQ: Is it Mendatory?\nA: No, DDPI is not mandatory. You can still choose not to activate DDPI and instead manually authorize every transaction by generating a T-PIN and entering an OTP. However, for the benefits of speed, security, and convenience, especially for frequent traders, activating DDPI is the more efficient option."
+      ],
+      "chunk_id": 250,
+      "topic": "Modification",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "If I want to place an OFS order by sending an email to ofs@choiceindia.com, what details do I need to mention and what's the cutoff time for sending it?",
+      "expected_output": "To place an OFS order via email to ofs@choiceindia.com, mention the quantity, rate, and client code, and ensure your ledger balance is clean. The email must be sent before 2:00 PM.",
+      "context": [
+        "SLBM › OFS ( OFFER FOR SALE )\nQ: How to apply for ofs in choice\nA: To apply for OFS, please send an email from your registered email ID to ofs@choiceindia.com, mentioning the quantity, rate, and client code before 2 : 00 PM. Additionally, ensure that your ledger balance is clean."
+      ],
+      "chunk_id": 590,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.3
+    },
+    {
+      "input": "If my open position gets square off automatically, do I still need to pay brokerage charges for that?",
+      "expected_output": "Yes, brokerage is charged on auto square-off since it counts as an executed trade.",
+      "context": [
+        "Charges › BROKERAGE\nQ: Is brokerage charged if my trade is auto-squared off?\nA: Yes, brokerage applies on auto square-off as it is an executed trade."
+      ],
+      "chunk_id": 983,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.75
+    },
+    {
+      "input": "My order seems to be stuck, so can someone from support actually place it for me directly, or will they just help me figure out what's wrong?",
+      "expected_output": "No—customer support cannot place the order for you directly. They can only guide and help troubleshoot the issue.",
+      "context": [
+        "Orders › Order Tracking & Support\nQ: Can customer support manually execute my order?\nA: No, customer support can only guide and troubleshoot, not place orders."
+      ],
+      "chunk_id": 443,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "I've already got a demat account with a different brokerage — can I still go ahead and open a new one with Choice FinX?",
+      "expected_output": "Yes, you can open multiple demat accounts with different brokers, so you can open a new one with Choice FinX even if you already have one elsewhere.",
+      "context": [
+        "DP related › DP BASICS & DEMAT ACCOUNT\nQ: Can I have more than one demat account?\nA: Yes, you can open multiple demat accounts with different brokers."
+      ],
+      "chunk_id": 267,
+      "topic": "DP related",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Hi, could you tell me what a final dividend really means and when companies typically declare it?",
+      "expected_output": "A Final Dividend is a dividend declared after a company's year-end results and approved at the AGM (Annual General Meeting).",
+      "context": [
+        "Corporate action › Dividend\nQ: What is a Final Dividend?\nA: Declared after year-end results and approved in the AGM."
+      ],
+      "chunk_id": 689,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "I'm looking to open a demat and trading account in the name of my HUF, what documents do I need to provide for that?",
+      "expected_output": "To open a HUF Demat and Trading account, you need to provide:\n\n1. HUF PAN card copy (name as per PAN)\n2. Address proof in HUF's name (bank statement, utility bill – latest two months, GST certificate, etc.)\n3. Bank proof (cheque copy or latest two months' bank statement showing HUF name, account number, IFSC and MICR code)\n4. HUF Coparceners Declaration, including their PAN, date of birth, and relation with Karta (dependents only)\n5. Karta's self-attested PAN card copy\n6. Karta's self-attested address proof\n7. If the previous Karta is deceased: Death Certificate and a bank letter confirming maintenance of the old HUF account by the new Karta\n8. HUF stamp with Karta's signature on the entire account opening form and all proofs, matching the HUF PAN name\n9. All documents verified with originals, with an In-Person Verification (IPV) stamp\n\nNote: The account will be opened solely in the name of the HUF.",
+      "context": [
+        "Checklist of Account opening › Account opening\nQ: What documents are needed to open a HUF ACCOUNT account?\nA: 1.        Huf Pan card copy required (Note – Fill up form as per pan site name only)\n2.        Address proof copy required (on Huf name only), i.e. bank statement, Utility bill (latest two month) \nGst certificate etc.\n3.        Bank proof copy required (Note – cheque copy or latest two month bank statement copy with huf name, account number, Ifsc code and Micr code)\n4.        Huf Coparceners Declaration required including their pan no., date of birth and relation with karta (only dependents)\n5.        Huf Individual Karta’s Pan card copy required (self-attested)\n6.        Huf Individual Karta’s Address proof required (self-attested)\n7.        In case Death of Karta ; Required Death Certificate of old Karta and Bank letter of Maintaining old Huf account by New Karta\n8.        Huf stamp with karta’s signature required in whole account opening form and proofs as per Huf pan card name\n9.        Verified with original and In-person verification stamp required on client all supporting proofs\n10.        Note - Trading and Demat account open on Huf name only"
+      ],
+      "chunk_id": 181,
+      "topic": "Checklist of Account opening",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "I noticed some of my shares got pledged on their own without me doing anything - is this because of SEBI's margin rules?",
+      "expected_output": "Yes — shares may be auto-pledged to meet margin requirements as per SEBI guidelines.",
+      "context": [
+        "DP related › PLEDGE / UNPLEDGE / INVOCATION\nQ: Why are my shares pledged automatically?\nA: Shares may be auto-pledged to meet margin requirements as per SEBI guidelines."
+      ],
+      "chunk_id": 368,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "How do I activate DDPI on my demat account?",
+      "expected_output": "To activate DDPI: log in to your Choice Broking account, go to Profile/Account Details/Manage Accounts, select \"Enable DDPI\"/\"Submit DDPI\"/\"Sell Authorization,\" e-sign the form using your Aadhaar number and OTP, and wait 24-48 working hours for confirmation via email.",
+      "context": [
+        "Modification › DDPI ACTIVATION\nQ: process to active DDPI?\nA: Log in to your Choice Broking trading account through the website or app. \n•        Navigate to profile: Go to the \"Profile,\" \"Account Details,\" or \"Manage Accounts\" section. \n•        Find DDPI: Look for an option like \"Enable DDPI,\" \"Submit DDPI,\" or \"Sell Authorization\" and click on it\n•        E-sign the form: Review the terms and conditions, and then proceed to e-sign the DDPI form using your Aadhaar number and the OTP sent to your registered mobile number. \n•        Wait for confirmation: Your DDPI request will be processed within 24-48 working hours. You will receive a confirmation email once it's activated."
+      ],
+      "chunk_id": 251,
+      "topic": "Modification",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "If I have a complaint about trades made through FinX and my brokerage amount has already run out, how is this usually resolved? What part does the Authorized Person (AP) play in sorting it out, and how does it typically get wrapped up with the client?",
+      "expected_output": "For FinX trades with exhausted brokerage, the AP provides brokerage confirmation, which is then used to reply to the client, and the complaint is closed.",
+      "context": [
+        "UT › Situation B: FinX Trade & Brokerage Exhausted\nQ: What if trades are from FinX and brokerage amount is exhausted?\nA: We obtain brokerage confirmation from the AP, reply to the client, and close the complaint."
+      ],
+      "chunk_id": 494,
+      "topic": "UT",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "Could you share the account number and IFSC details I need to transfer funds via NEFT/RTGS to the Indian Clearing Corporation Ltd - MFD account for my mutual fund purchase?",
+      "expected_output": "Account Number: MFDICC\nIFSC Code: HDFC0000240",
+      "context": [
+        "Mutual Fund\nQ: What are the bank details for NEFT/RTGS Mutual Fund payments?\nA: Beneficiary Name: Indian Clearing Corporation Ltd - MFD A/c\n Account Number: MFDICC\n IFSC Code: HDFC0000240\n Account Type: Current"
+      ],
+      "chunk_id": 3,
+      "topic": "Mutual Fund",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "What exactly is a Stop-Loss order, and how does it help cap my losses once the trigger price hits?",
+      "expected_output": "A Stop-Loss order is designed to help limit your losses. It works by triggering an order once a specified trigger price is reached, at which point the order executes to help cap further losses.",
+      "context": [
+        "Orders › Stop-Loss Orders\nQ: What is a Stop-Loss order?\nA: A Stop-Loss order helps limit losses by triggering when a trigger price is reached."
+      ],
+      "chunk_id": 391,
+      "topic": "Orders",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "How do I sign in to StrikeX? Do I just put in my Client ID and password, and is there a 2FA step before I can get to my dashboard?",
+      "expected_output": "Yes—enter your Client ID and password, complete 2FA if it's enabled, and you'll then access the dashboard.",
+      "context": [
+        "StrikeX › Login & Setup\nQ: How do I log in to StrikeX?\nA: Enter your Client ID, password, complete 2FA (if enabled), and access the dashboard."
+      ],
+      "chunk_id": 637,
+      "topic": "StrikeX",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "My UT (unauthorized transaction) case is still open and I haven't agreed to close it - can support go ahead and close it anyway without my approval?",
+      "expected_output": "No, a UT case cannot be closed without your explicit consent — client approval is mandatory before closure.",
+      "context": [
+        "UT › Client Communication & Closure Rules\nQ: Can a UT case be closed without client consent?\nA: No, explicit client consent is mandatory."
+      ],
+      "chunk_id": 510,
+      "topic": "UT",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "I've forgotten my Client ID linked to my Choice FinX demat account, what's the process to retrieve it?",
+      "expected_output": "To retrieve your forgotten Client ID, share your PAN number, registered mobile number, or email ID, and it will be provided to you. Alternatively, email customercare@choiceindia.com with your details.",
+      "context": [
+        "Login › OTP & Authentication Issues\nQ: I forgot my Client ID. How can I retrieve it?\nA: You may share your PAN number, registered mobile number, or email ID, and we will provide your Client ID.\nAlternatively, you can email customercare@choiceindia.com\n with your details."
+      ],
+      "chunk_id": 823,
+      "topic": "Login",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "I found some unauthorized trades on my account that I definitely didn't make, who should I contact to report this?",
+      "expected_output": "You should report the unauthorized trades by filing an Unauthorized Trade (UT) complaint, which is initiated when a client claims trades were executed without their consent.",
+      "context": [
+        "UT › Basic Complaint Intake\nQ: What is an Unauthorized Trade (UT) complaint?\nA: An Unauthorized Trade complaint is raised when a client claims trades were executed without their consent."
+      ],
+      "chunk_id": 477,
+      "topic": "UT",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "My mutual fund units are still in physical/paper form — what's the process to get them dematerialized into my Choice FinX demat account?",
+      "expected_output": "Submit the prescribed conversion form in hard copy to the DP Team at: Choice Broking Private Limited, Deepak (DP Team), 10th Floor, Summer Plaza, Opp. Tirupati Hotel, Marol Maroshi Road, Andheri East, Mumbai - 400059.",
+      "context": [
+        "Mutual Fund\nQ: How can I convert Mutual Fund holdings from Physical to Demat mode?\nA: Submit the prescribed conversion form in hard copy to the DP Team.\n \n Address:\n Choice Broking Private Limited\n Deepak (DP Team)\n 10th Floor, Summer Plaza, Opp. Tirupati Hotel, Marol Maroshi Road, Andheri East, Mumbai - 400059"
+      ],
+      "chunk_id": 4,
+      "topic": "Mutual Fund",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Can I extend my SLBM position before it expires using the Rollover Facility instead of letting it close out?",
+      "expected_output": "Yes, the Rollover Facility allows you to roll over your SLBM position before the settlement date, rather than letting it close out at expiry.",
+      "context": [
+        "SLBM › Rollover Facility\nQ: Can SLBM positions be rolled over before expiry?\nA: Yes, rollover can be done before the settlement date."
+      ],
+      "chunk_id": 553,
+      "topic": "SLBM",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Is it necessary to already hold shares of a company before I can apply in its rights issue?",
+      "expected_output": "Yes. Only existing shareholders holding shares on the record date are eligible to apply for a Rights Issue.",
+      "context": [
+        "Corporate action › Rights Issue\nQ: Who is eligible to apply for a Rights Issue?\nA: Only existing shareholders holding shares on the record date are eligible."
+      ],
+      "chunk_id": 722,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "At what percentage of my margin does the auto square-off kick in and close my open positions due to MTM loss?",
+      "expected_output": "Auto square-off occurs when the MTM loss reaches 80% of your margin.",
+      "context": [
+        "RMS › Auto Square-Off & Projected Risk\nQ: At what loss level does square-off occur?\nA: If MTM loss reaches 80% of margin, positions are squared off."
+      ],
+      "chunk_id": 787,
+      "topic": "RMS",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "Can you explain what Neuron is and how it's used to track changes made to a client's profile?",
+      "expected_output": "Neuron is the system where client profile modifications are recorded, allowing changes made to a client's profile to be tracked.",
+      "context": [
+        "Login › How long does KYC correction take?\nQ: What is Neuron in OTP-related issues?\nA: Neuron is the system where client profile modifications are recorded."
+      ],
+      "chunk_id": 850,
+      "topic": "Login",
+      "synthetic_input_quality": 0.1
+    },
+    {
+      "input": "Once I've submitted all the necessary documents and details, how soon will you send me the deal sheet and payment information?",
+      "expected_output": "The deal sheet and payment details will be shared once the required documents and details are received.",
+      "context": [
+        "SLBM › NCD\nQ: When will the payment details be shared with the client?\nA: Once the required documents and details are received, the team will share the deal sheet along with payment details."
+      ],
+      "chunk_id": 616,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.1
+    },
+    {
+      "input": "If I disable the phone lock feature on my FinX account to sort out a login issue, will that reduce the security of my app?",
+      "expected_output": "Disabling the phone lock temporarily helps resolve the login issue, and you can re-enable it afterward to restore that security feature.",
+      "context": [
+        "Login › How long does KYC correction take?\nQ: Will removing phone lock affect app security?\nA: Temporarily removing the lock helps resolve login issues; you may re-enable it later."
+      ],
+      "chunk_id": 855,
+      "topic": "Login",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "My payout hasn't shown up in my registered bank account yet, what should I do next? What steps do I need to follow, and what documents like a bank statement should I share with customer support to get this fixed?",
+      "expected_output": "If your payout hasn't been credited to your registered bank account, send your bank statement via email to customercare@choiceindia.com. The agent will then check with the payout department regarding the issue.",
+      "context": [
+        "Funds › Payin And Payout and mode of payment\nQ: What if client does not get payout in his registered bank a/c?\nA: if client does not get payout credited in his registered bank than than client need to send bank statement on mail to customercare@choiceindia.com so that agent can check with payout out department regarding this."
+      ],
+      "chunk_id": 462,
+      "topic": "Funds",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "Is there any way to avoid paying the DIS booklet or share transfer fees for offline transfers, or are these charges compulsory?",
+      "expected_output": "No, these charges are mandatory and cannot be avoided for processing offline share transfers.",
+      "context": [
+        "Charges › DIS Booklet & Share Transfer\nQ: Can DIS or share transfer charges be avoided?\nA: No, these charges are mandatory for processing offline share transfers."
+      ],
+      "chunk_id": 1053,
+      "topic": "Charges",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "I purchased some stocks earlier under a normal delivery order, but now I'm wondering if I can convert that holding into MTF. Is that possible?",
+      "expected_output": "No, delivery stocks cannot be converted into MTF. MTF is applied only at the time of purchase if you select that option, and since delivery stocks are fully owned positions, they cannot be moved into MTF later, as MTF requires a funded position with collateral applied at purchase.",
+      "context": [
+        "MTF\nQ: Can I convert delivery stocks to MTF?\nA: No, delivery stocks cannot be converted into MTF.\nReason:\n•\tStocks go under MTF at the time of purchase if the client chooses the MTF option.\n•\tIf a stock is purchased as delivery, it is a fully owned position and cannot be moved into MTF later.\n•\tMTF requires a funded position with collateral, which can only be applied at the time of purchase."
+      ],
+      "chunk_id": 35,
+      "topic": "MTF",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "I currently have 100 shares in my demat account bought at ₹1,000 each, and the company just announced a 1:2 stock split. How will this reflect in my holdings after the split?",
+      "expected_output": "After the 1:2 stock split, your 100 shares at ₹1,000 each will become 200 shares at ₹500 each.",
+      "context": [
+        "Corporate action › Stock Split / Spin off\nQ: Example of Stock Split?\nA: 100 shares @ ₹1,000 → 200 shares @ ₹500 after 1:2 split."
+      ],
+      "chunk_id": 715,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "I want to purchase shares worth 1 lakh but I don't have the entire amount ready in my account—how can the margin trading feature on FinX assist me here?",
+      "expected_output": "With MTF (Margin Trading Facility), you don't need the full ₹1,00,000 upfront. For example, with 4x leverage, you'd pay only ₹25,000 while the broker funds the remaining ₹75,000, allowing you to take the position with limited capital (interest applies on the funded amount).",
+      "context": [
+        "MTF\nQ: What is MTF (Margin Trading Facility)?\nA: •        MTF is a facility offered by stockbrokers that allows clients to buy shares by paying only a part of the total value, and the rest is funded by the broker.\n•        Example: If you want to buy shares worth ₹1,00,000 and your broker allows 4x leverage under MTF, you only need to pay ₹25,000, and the broker funds the remaining ₹75,000.\n•        This helps clients take larger positions with limited own capital, but interest is charged on the funded portion."
+      ],
+      "chunk_id": 17,
+      "topic": "MTF",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "My dad passed away recently and he had some shares sitting in his demat account. As his son, what's the process for getting those shares transferred into my name?",
+      "expected_output": "As the son, you can apply for transmission of the shares as a legal heir (or as the nominee, if you were nominated) of your deceased father's demat account.",
+      "context": [
+        "DP related › TRANSMISSION OF SHARES (DEATH CASES)\nQ: Who can apply for transmission?\nA: The nominee or legal heir of the deceased account holder can apply."
+      ],
+      "chunk_id": 332,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "The demat account holder has passed away and the nominee named is still a minor - can the shares still be transmitted in this case?",
+      "expected_output": "Yes, shares can be transmitted to a minor; the account will be operated by a guardian.",
+      "context": [
+        "DP related › TRANSMISSION OF SHARES (DEATH CASES)\nQ: Can shares be transmitted to a minor?\nA: Yes, shares can be transmitted to a minor, and the account will be operated by a guardian."
+      ],
+      "chunk_id": 341,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "What are the brokerage charges on FinX for delivery and intraday orders, and how much do you charge per lot for options trading?",
+      "expected_output": "FinX charges 0.02% on Delivery and Intraday trades, and ₹25 per lot on Options.",
+      "context": [
+        "Charges › BROKERAGE\nQ: What brokerage does FinX charge?\nA: FinX charges 0.02% on Delivery, Intraday, and Futures trades, and ₹25 per lot on Options."
+      ],
+      "chunk_id": 957,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "I'm considering moving to another broker since they have lower fees than FinX. What advantages does FinX actually offer in terms of order execution, fee transparency, customer service, and overall brand trust that might make it worth sticking with instead of switching?",
+      "expected_output": "FinX offers reliable execution, transparent charges, professional customer support, and a trusted brand—advantages that go beyond just low pricing, making it worth staying rather than switching to a lower-fee broker.",
+      "context": [
+        "Charges › Free services vs other brokers (comparison & objections)\nQ: Why should I continue with FinX instead of switching?\nA: With FinX, you get reliable execution, transparent charges, professional support, and a trusted brand—not just low pricing."
+      ],
+      "chunk_id": 1077,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "I'm trying to move shares to someone else's demat account through NSDL SPEED-e but it keeps failing. Could this be because I'm using Password Mode instead of Digital Signature mode, since transfers to other demat accounts need Digital Signature mode?",
+      "expected_output": "Yes, that's likely the issue. Transfers to other demat accounts through SPEED-e require Digital Signature mode; Password Mode does not support this, which is why your transfer is failing.",
+      "context": [
+        "DP related › CDSL EASI / EASIEST & NSDL SPEED-e\nQ: Why can’t I transfer shares to another person using SPEED-e?\nA: You may be using Password Mode. Transfers to other demat accounts require Digital Signature mode."
+      ],
+      "chunk_id": 298,
+      "topic": "DP related",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Will I be charged securities transaction tax when I close out my futures and options trades on FinX?",
+      "expected_output": "Yes — STT is charged on F&O sell trades, so closing out your futures and options positions on FinX will attract STT as per government rules.",
+      "context": [
+        "Charges › Securities Transaction Tax (STT / CTT)\nQ: On which trades is STT charged?\nA: STT is charged on equity delivery, intraday equity sell trades, and F&O sell trades as per government rules."
+      ],
+      "chunk_id": 938,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "I keep getting a server error whenever I try to log into my FinX account, should I just wait it out or is there something else I need to do?",
+      "expected_output": "Yes, you should wait it out — most server-related errors resolve automatically after some time. If the issue persists beyond that, you may need to seek additional support.",
+      "context": [
+        "Login › Additional Login & Security\nQ: Can server errors resolve automatically?\nA: Yes, most server-related errors resolve automatically after some time."
+      ],
+      "chunk_id": 841,
+      "topic": "Login",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "Is self-attestation of my documents required when I'm setting up a demat account?",
+      "expected_output": "Yes, self-attestation is required for offline submissions and for documents uploaded online in some cases to verify authenticity.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: Is it mandatory to submit self-attested documents?\nA: Yes, self-attestation is required for offline submissions and for documents uploaded online in some cases to verify authenticity."
+      ],
+      "chunk_id": 79,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "For a 1:4 rights issue announced by a company, how many additional shares am I eligible to purchase?",
+      "expected_output": "For every 4 shares you currently hold, you are eligible to purchase 1 additional share.",
+      "context": [
+        "Corporate action › Rights Issue\nQ: Can you explain a 1:4 Rights Issue with an example?\nA: For every 4 shares held, the shareholder is eligible to buy 1 additional share."
+      ],
+      "chunk_id": 723,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "I haven't done any transactions in my demat account for quite some time - would it get marked as dormant because of that?",
+      "expected_output": "Yes, an inactive demat account is one where no transactions have taken place for a long period, so a lack of transactions over an extended time can lead to it being marked as inactive/dormant.",
+      "context": [
+        "DP related › DP BASICS & DEMAT ACCOUNT\nQ: What is meant by an inactive demat account?\nA: An inactive account is one where no transactions have taken place for a long period."
+      ],
+      "chunk_id": 272,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "What exactly is a DIS slip for, and how do I use it to transfer shares out manually?",
+      "expected_output": "A DIS (Delivery Instruction Slip) booklet is used to authorize the offline transfer of shares from your demat account.",
+      "context": [
+        "Charges › DIS Booklet & Share Transfer\nQ: What is a DIS booklet?\nA: DIS stands for Delivery Instruction Slip. It is used to authorize offline transfer of shares from your demat account."
+      ],
+      "chunk_id": 1043,
+      "topic": "Charges",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "If I sell shares of two different companies on the same day, will DP charges apply once overall or separately for each stock sold?",
+      "expected_output": "DP charges apply separately for each ISIN (stock) sold, not once overall.",
+      "context": [
+        "Charges › Dp charges been aplicable on multiple transaction how\nQ: If I sell shares of two different companies on the same day, how many DP charges apply?\nA: DP charges will apply separately for each ISIN sold."
+      ],
+      "chunk_id": 993,
+      "topic": "Charges",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "What happens to my demat account if I never got around to adding a nominee for it?",
+      "expected_output": "If no nominee is added to your demat account, there is no person legally entitled to claim the assets in your account, which can complicate the process of transferring the holdings to your legal heirs after your death.",
+      "context": [
+        "Modification › How can I check my demat account nominee?\nQ: What happens if nominee is not added?\nA: A nominee is the person legally entitled to claim"
+      ],
+      "chunk_id": 233,
+      "topic": "Modification",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Do I have to pay anything for pledging or unpledging my shares, and what are the DP charges I should know about?",
+      "expected_output": "Yes, applicable pledge and unpledge charges are levied as per the charge structure.",
+      "context": [
+        "DP related › PLEDGE / UNPLEDGE / INVOCATION\nQ: Are there any charges for pledging shares?\nA: Yes, applicable pledge and unpledge charges are levied as per the charge structure."
+      ],
+      "chunk_id": 372,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "Is there a cap on how many shares I can buy or sell in a single order due to exchange freeze limits?",
+      "expected_output": "Yes, orders are subject to exchange quantity freeze limits, which cap the number of shares you can buy or sell in a single order.",
+      "context": [
+        "Orders › Order Execution & Modification\nQ: Can I place large quantity orders at once?\nA: Orders are subject to exchange quantity freeze limits."
+      ],
+      "chunk_id": 433,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.4
+    },
+    {
+      "input": "What types of bonds can I invest in through FinX, like government or corporate bonds?",
+      "expected_output": "Bond types include: Government Bonds (G-Secs), Corporate Bonds, PSU Bonds, Fixed-Rate Bonds, Floating-Rate Bonds, Zero-Coupon Bonds, Tax-Free Bonds, Convertible Bonds, Callable Bonds, Puttable Bonds, Inflation-Indexed Bonds, and Municipal Bonds.",
+      "context": [
+        "SLBM › Bonds\nQ: Types of Bonds\nA: 1. Government Bonds (G-Secs)\nIssued by Central or State Government\nConsidered lowest risk\nFixed or floating interest\nExamples: Treasury Bills (T-Bills), Government Securities\n2. Corporate Bonds\nIssued by private or public companies\nHigher return than government bonds\nRisk depends on company credit rating\n3. PSU Bonds\nIssued by Public Sector Undertakings\nModerate risk\nOften used for long-term investment\n4. Fixed-Rate Bonds\nInterest rate remains constant throughout the tenure\nPredictable income\n5. Floating-Rate Bonds\nInterest rate changes periodically\nLinked to benchmark rates like repo rate\nProtects against interest rate risk\n6. Zero-Coupon Bonds\nNo periodic interest\nIssued at a discount and redeemed at face value\nReturn is the difference between issue price and maturity value\n7. Tax-Free Bonds\nInterest income is exempt from income tax\nIssued mainly by PSUs\nSuitable for high tax-bracket investors\n8. Convertible Bonds\nCan be converted into equity shares\nLower interest due to conversion option\n9. Callable Bonds\nIssuer has the right to redeem early\nUsually offer higher interest\n10. Puttable Bonds\nInvestor has the option to sell back to issuer before maturity\n11. Inflation-Indexed Bonds\nPrincipal and/or interest adjusted for inflation\nProtects real returns\n12. Municipal Bonds\nIssued by municipal corporations\nUsed to fund infrastructure projects\nModerate risk"
+      ],
+      "chunk_id": 603,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "If I file a grievance regarding my FinX account, will I receive an immediate confirmation?",
+      "expected_output": "Yes, you will receive an immediate first response acknowledging your complaint.",
+      "context": [
+        "UT › Initial Handling Process\nQ: Is a response given to the client immediately?\nA: Yes, a first response is shared with the client acknowledging the complaint."
+      ],
+      "chunk_id": 482,
+      "topic": "UT",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "I submitted a physical form to change my bank account details, so how many days will it take before the update shows up in my trading account?",
+      "expected_output": "Once we receive the hard copy of the form, the update will reflect in 24-48 working hours.",
+      "context": [
+        "Modification › BANK MODIFICATION\nQ: Offline tat for modification?\nA: Once we recieved the hard copy of the form it will update in 24-48 working hours."
+      ],
+      "chunk_id": 212,
+      "topic": "Modification",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "Does the FinX app let me protect my login with things like 2FA, an MPIN, or fingerprint biometrics?",
+      "expected_output": "Yes, the FinX app supports 2FA, MPIN, and biometric login to protect your account.",
+      "context": [
+        "Finx features › Security & Settings\nQ: What security features are available in the app?\nA: The app supports 2FA, MPIN, and biometric login."
+      ],
+      "chunk_id": 923,
+      "topic": "Finx features",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "Is there a single consolidated statement that shows both my mutual fund investments and demat account holdings together?",
+      "expected_output": "Yes, the Consolidated Account Statement (CAS) combines both demat holdings and mutual fund investments in a single statement, issued monthly or half-yearly by the depository.",
+      "context": [
+        "Reports › Profit & loss\nQ: Types of Demat Statements\nA: Holding Statement\nShows securities held as of a particular date.\n\nTransaction Statement\nShows all debit and credit transactions during a selected period.\n\nConsolidated Account Statement (CAS)\nA single statement combining:\n\nDemat holdings\n\nMutual fund investments\nIssued monthly or half-yearly by the depository."
+      ],
+      "chunk_id": 1092,
+      "topic": "Reports",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "One of the companies I've invested in is splitting into two through a demerger - how will the new company's shares actually show up in my Choice FinX demat account?",
+      "expected_output": "Shares of the new company will be allocated to your Choice FinX demat account proportionately, based on the demerger ratio set for the corporate action.",
+      "context": [
+        "Corporate action › Demerger:\nQ: How are the shares of the new company allocated in a demerger?\nA: Shares of the new company are usually allocated proportionately based on the demerger ratio."
+      ],
+      "chunk_id": 746,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "If I don't get a satisfactory reply to my complaint, what's the next step that happens?",
+      "expected_output": "The matter is escalated to Ashish Sir for resolution.",
+      "context": [
+        "UT › Situation G: No Positive Resolution\nQ: What if no positive response is received?\nA: The matter is escalated to Ashish Sir for resolution."
+      ],
+      "chunk_id": 500,
+      "topic": "UT",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "Can I open a joint demat account with my child where I'm listed as the parent?",
+      "expected_output": "No, a joint Demat account is not permitted with a minor. A Minor Demat Account must be opened solely in the minor's name and operated by a single guardian; joint accounts are only available for adults.",
+      "context": [
+        "Onboarding › MINOR ACCOUNT OPENING\nQ: Can a minor open a joint Demat account with a parent?\nA: No, a Minor Demat Account is always in the name of the minor, operated by a single guardian. Joint accounts are only for adults."
+      ],
+      "chunk_id": 141,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.75
+    },
+    {
+      "input": "If my DIS-based share transfer fails to complete, will I be refunded the charges I paid for it?",
+      "expected_output": "No, DIS and transfer charges are non-refundable once processed, even if the transfer fails to complete.",
+      "context": [
+        "Charges › DIS Booklet & Share Transfer\nQ: Are DIS charges refundable if the transfer fails?\nA: No, once processed, DIS and transfer charges are non-refundable."
+      ],
+      "chunk_id": 1054,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "My ledger is showing a T+5 debit — what exactly does that mean, and why would this cause Choice to auto square-off my stock holdings?",
+      "expected_output": "A T+5 debit means your account ledger has had a debit balance outstanding for 5 trading days since the transaction date. When this happens, Choice automatically liquidates (square-offs) your stock positions to recover the outstanding debit amount.",
+      "context": [
+        "Orders › Basic Question Bank\nQ: Why my shares our been squared off\nA: Thank you for staying connected with us. We would like to inform you that your ledger was in a T+5 debit situation, which led to the automatic liquidation of your stock position."
+      ],
+      "chunk_id": 460,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.3
+    },
+    {
+      "input": "I already have some shares in my demat account — is it smarter to pledge them for margin or go with MTF to buy fresh stocks? Could you explain the real difference between these two options?",
+      "expected_output": "**Answer:**\n\nIf you already own shares, pledging them is the smarter choice for getting margin, since it's free (no interest) — you simply block your existing stocks in your demat account to receive margin benefits for trading or MTF purchases.\n\nMTF, on the other hand, is meant for buying fresh stocks: you pay part of the amount yourself, and the broker funds the rest, charging interest (e.g., 21% per annum) on the funded portion. The stocks bought stay with the broker as collateral until you repay the funded amount plus interest.\n\n**Key difference:**\n- **Pledge** = use existing shares to get margin, no interest, ownership remains yours.\n- **MTF** = borrow funds to buy new shares, interest applies, broker holds shares as collateral until repayment.\n\nSo, if your goal is just to unlock margin from stocks you already hold, pledging is more cost-effective. If you want to purchase new stocks with leverage, MTF is the appropriate route — and you can even use your pledged margin to fund MTF purchases.",
+      "context": [
+        "MTF\nQ: What is the difference between MTF and the Pledge of stock?\nA: The main difference between MTF (Margin Trading Facility) and Pledge lies in their purpose and usage:\n1.\tPurpose:\no\tMTF (Margin Trading Facility):\nMTF allows you to buy stocks using partial funds — part of the amount is paid by you (cash or collateral), and the remaining is funded by the broker. You pay interest on the funded portion.\no\tPledge (Collateral):\nPledging is done to get a margin against your existing stocks. The pledged stocks remain in your demat account but are blocked as collateral. You don’t pay any interest on this; instead, you get margin benefits for trading or for buying under MTF.\n2.\tOwnership:\no\tMTF: Stocks bought under MTF are held as collateral by the broker until you repay the funded amount and interest.\no\tPledge: The pledged stocks are already owned by you — you just temporarily block them to get margin.\n3.\tInterest:\no\tMTF: Interest (e.g., 21% per annum) is charged on the funded amount.\no\tPledge: No interest is charged until used; it only provides margin benefit.\n4.\tExample:\no\tIf you buy ₹1,00,000 worth of shares under MTF with ₹40,000 of your margin and ₹60,000 funded by the broker — you pay interest on ₹60,000.\no\tIf you pledge your existing stocks worth ₹1,00,000, you may get ₹50,000 as margin for trading or MTF purchases, but no interest is charged for pledging."
+      ],
+      "chunk_id": 39,
+      "topic": "MTF",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "One of the companies in my portfolio is going through a demerger, and I noticed the stock price falling after that - will this actually cause me a loss?",
+      "expected_output": "No—after a demerger, the combined value of the parent company and the demerged company generally remains the same. The fall in the parent's stock price reflects the value now allocated to the new demerged entity's shares, not an actual loss; individual stock prices may change based on market perception, but your overall holding value should be broadly unaffected.",
+      "context": [
+        "Corporate action › Demerger:\nQ: What happens to the stock price after a demerger?\nA: After a demerger, the combined value of the parent and the demerged company will generally remain the same, though the individual stock prices may change based on market perception of each company."
+      ],
+      "chunk_id": 743,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "Is it possible to open a minor demat account for my child even if they haven't got a PAN card yet?",
+      "expected_output": "No, a minor demat account cannot be opened without a PAN card, as it is mandatory under SEBI guidelines.",
+      "context": [
+        "Onboarding › MINOR ACCOUNT OPENING\nQ: What if the minor doesn’t have a PAN card?\nA: The account cannot be opened without a PAN card, as it is mandatory under SEBI guidelines."
+      ],
+      "chunk_id": 148,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "I already changed my address on file with Choice Broking, but I'm still not getting any updates or notices from the Exchange or Depository — what should I do next?",
+      "expected_output": "Immediately contact Choice Broking's customer support. If you do not get a response, take the matter up with the Exchange or Depository directly.",
+      "context": [
+        "Modification › How to delete or inactive a bank account\nQ: What should I do if I don't receive communications at my updated address?\nA: If you have updated your address but are not receiving messages from the Exchange or Depository, you should immediately contact Choice Broking's customer support. If you do not get a response, you should take the matter up with the Exchange or Depository directly."
+      ],
+      "chunk_id": 198,
+      "topic": "Modification",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "Is CDSL EASIEST actually safer than filling out a physical DIS slip for transferring shares from my demat account?",
+      "expected_output": "Yes, CDSL EASIEST is safer than using a physical DIS slip, as it reduces manual errors and the risk of misuse of physical DIS slips.",
+      "context": [
+        "DP related › CDSL EASI / EASIEST & NSDL SPEED-e\nQ: Is EASIEST safer than using a DIS booklet?\nA: Yes, EASIEST reduces manual errors and the risk of misuse of physical DIS slips."
+      ],
+      "chunk_id": 291,
+      "topic": "DP related",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "My old mobile number and email are no longer active, so I can't receive the OTP for my FinX account. What's the process to regain access?",
+      "expected_output": "**Response:** Complete an offline modification process. FinX will share a form for you to update your new mobile number or email ID, which you must then courier to the address provided in the email.",
+      "context": [
+        "Login › OTP & Authentication Issues\nQ: I no longer have access to my registered mobile number or email. How can I log in?\nA: You must complete an offline modification process.\nWe will share a form to update your new mobile number or email ID.\nPlease courier the completed form to the address mentioned in the email."
+      ],
+      "chunk_id": 830,
+      "topic": "Login",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "Can you explain what a GTT or Good Till Triggered order is, walk me through how to set one up on the FinX Website, and let me know how long it stays valid before expiring?",
+      "expected_output": "**GTT (Good Till Triggered) Order:** An order that gets executed once the stock's market price reaches your specified trigger price. It's a delivery order valid for Equity (Cash) and Derivatives (F&O) segments.\n\n**Validity:** One year from the date of placing the order.\n\n**How to place a GTT Order on FinX Website:**\n1. Select the scrip and choose Buy/Sell action.\n2. In the Delivery tab, select the GTT option.\n3. Enter your desired trigger price and quantity.\n4. The one-year validity end date will be displayed as a note below.\n5. Once placed, the order appears in the GTT Orderbook with status \"Triggered Pending\"; when the price is reached, the status changes to \"Triggered.\"",
+      "context": [
+        "Orders › Basic Question Bank\nQ: What is GTT Order? How to place GTT Order in FinX Website?\nA: 1. The Good Till Triggered (GTT) - These orders are executed (triggered) once the market price of the stock reaches your desired price i.e the price you mentioned in the GTT Order. \n\n2. The validity of the GTT order is one year.\n\n3. GTT order is Delivery order and GTT order can be placed for Equity (Cash) and Derivatives (Future & Options) segment. \n\n\n\nHow to place the GTT Order -\n\n1. Select the scrip for which you want to place the GTT order, and also select the Buy/Sell         action.\n2. In the Delivery tab, select the GTT option.\n3. Enter the price at which you want to place the order and enter the quantity. \n4. The validity of the GTT order will be one year, and the date till order will be valid, will be displayed below in note. \n5. When the GTT order is placed, it will be visible in the GTT Orderbook with status as Triggered Pending and once the price is triggered, the status will change to Triggered."
+      ],
+      "chunk_id": 451,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "Apart from equity trading, what all can I do on the Choice FinX app—like opening an account, investing in other segments, or using any extra tools?",
+      "expected_output": "On the Choice FinX app, apart from equity trading, you can open a paperless demat and trading account, trade in F&O, commodities, and currency, invest in mutual funds and IPOs, and access market research tools, charts, and community features.",
+      "context": [
+        "Finx features › Application Overview\nQ: What services are available on the Choice FinX app?\nA: The app supports paperless demat and trading account opening, trading in equity, F&O, commodities, currency, mutual fund investments, IPOs, market research tools, charts, and community features."
+      ],
+      "chunk_id": 888,
+      "topic": "Finx features",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "I lost my Demat Instruction Slip (DIS) booklet that I use for off-market transfers, what should I do to get it sorted?",
+      "expected_output": "Immediately inform us so we can block the lost DIS booklet and issue you a new one.",
+      "context": [
+        "DP related › DIS BOOKLET & OFF-MARKET TRANSFER\nQ: What happens if I lose my DIS booklet?\nA: Please inform us immediately so we can block the booklet and issue a new one."
+      ],
+      "chunk_id": 360,
+      "topic": "DP related",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "What are the benefits of opening a joint demat account with my spouse on Choice FinX?",
+      "expected_output": "Opening a joint demat account with your spouse offers: easy fund management for family or partners, continuity through survivor rights in case of one holder's demise, shared access to investment and trading opportunities, a transparent record of all transactions, and helpful support for financial planning and tax management.",
+      "context": [
+        "Onboarding › Joint Account Opening\nQ: What are the Benefits of a Joint Account?\nA: ●        Easy fund management for family or partners.\n●        Continuity in case of one holder’s demise (survivor rights).\n●        Shared access to investment and trading opportunities.\n●        Transparent record of all transactions.\n●        Helpful in financial planning and tax management."
+      ],
+      "chunk_id": 176,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "Where can I find the CML Report in the FinX app, and which section under my Profile do I need to check to download it?",
+      "expected_output": "Clients can download the CML Report by navigating to **Application > Profile > CML Report** in the app.",
+      "context": [
+        "Reports › Profit & loss\nQ: How Clients Can Download CML\nA: Clients can generally download CML from:\n- Navigate to Application > Profile > CML Report"
+      ],
+      "chunk_id": 1090,
+      "topic": "Reports",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "I set up my NRI account offline, so can I change my bank account details myself using the FinX app?",
+      "expected_output": "No, you cannot modify the details of offline accounts (such as NRI, HUF, corporate, or minor accounts) through the application.",
+      "context": [
+        "Modification › BANK MODIFICATION\nQ: Can we modify the details of offline account through the application?\nA: No you cannot modify the details through the application of those account that you open in offline mode such as- Huf/corporate/minor/nri etc."
+      ],
+      "chunk_id": 208,
+      "topic": "Modification",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "Can I set up a joint demat account that combines my HUF with my own individual name?",
+      "expected_output": "No. An HUF is a separate legal entity, so its demat account cannot be jointly held with an individual.",
+      "context": [
+        "Onboarding › HUF Account Opening\nQ: Can HUF open a joint demat account with an individual?\nA: No. HUF is a separate entity, so its demat account cannot be jointly held with an individual"
+      ],
+      "chunk_id": 119,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "I've been getting a 500 error trying to log into my FinX account at 8:45 AM, and I read that this kind of error is a known server issue between 8:30-9:00 AM. Since my login attempt falls in that window, should I just wait and try again, or do I need to raise a support ticket for this?",
+      "expected_output": "Since your login attempt falls within the known 8:30–9:00 AM window for Error 500, this is expected server-related behavior. You should try logging in again after some time; a support ticket only needs to be raised if the issue continues beyond that window.",
+      "context": [
+        "Login › Login Issues & Error Handling\nQ: What does Error RSC#500 or 404 mean?\nA: These are server-related errors.\n• 404 Error usually occurs between 2:30 AM – 6:30 AM\n• 500 Error usually occurs between 8:30 AM – 9:00 AM\nPlease try logging in after some time. If the issue continues, we will raise a tech ticket."
+      ],
+      "chunk_id": 815,
+      "topic": "Login",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "I keep getting unable to login on FinX every morning between 3 AM and 5 AM IST - is this due to scheduled server maintenance during that window? What's causing this issue and how can I fix it?",
+      "expected_output": "Yes, this is expected behavior. Login failures during 3 AM–5 AM IST are due to scheduled server maintenance windows during that time slot. There is no fix needed on your end—simply retry logging in after the maintenance window ends.",
+      "context": [
+        "Login › Additional Login & Security\nQ: Why does login fail during early morning hours?\nA: Due to server maintenance windows, login may fail during specific time slots."
+      ],
+      "chunk_id": 842,
+      "topic": "Login",
+      "synthetic_input_quality": 0.4
+    },
+    {
+      "input": "I've got some physical share certificates lying around - do I have to dematerialize all of them together, or can I convert just a few of them at a time?",
+      "expected_output": "No, you don't have to convert all of them together. Partial dematerialisation is allowed, so you can convert just a few of your physical share certificates at a time.",
+      "context": [
+        "DP related › DEMAT (Dematerialisation)\nQ: Can I demat only part of my physical shares?\nA: Yes, partial dematerialisation is allowed."
+      ],
+      "chunk_id": 315,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "After brokerage and government charges are deducted and my settlement amount is finalized, when will I actually be able to withdraw my profit from FinX?",
+      "expected_output": "Once your settlement values are finalized after deducting brokerage and government charges, you can withdraw your profit amount. For a detailed charge breakup, refer to the contract note sent to your email.",
+      "context": [
+        "Orders › Basic Question Bank\nQ: When i can withdraw my profit amount\nA: The settlement values are finalized after deducting brokerage and government charges. To understand the detailed charge breakup, please refer to the contract note sent to your email."
+      ],
+      "chunk_id": 464,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.4
+    },
+    {
+      "input": "I forgot the password for my CDSL EASIEST account, can you tell me how to reset it?",
+      "expected_output": "You can reset your EASIEST password on the CDSL website using OTP verification.",
+      "context": [
+        "DP related › CDSL EASI / EASIEST & NSDL SPEED-e\nQ: What should I do if I forget my EASIEST password?\nA: You can reset your password on the CDSL website using OTP verification."
+      ],
+      "chunk_id": 292,
+      "topic": "DP related",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Can I add a nominee to my HUF demat/trading account with Choice FinX?",
+      "expected_output": "Yes, HUF accounts can have a nominee for easy transfer of assets in case of the Karta's death.",
+      "context": [
+        "Onboarding › HUF Account Opening\nQ: Can HUF have a nominee?\nA: Yes, HUF accounts can have a nominee for easy transfer of assets in case of the Karta’s death."
+      ],
+      "chunk_id": 110,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "The prices on my StrikeX app seem stuck and won't update, how do I fix this?",
+      "expected_output": "Refresh your browser, clear the cache, check your internet connection, or relog into the app.",
+      "context": [
+        "StrikeX › Troubleshooting\nQ: What to do if data is not updating?\nA: Refresh browser, clear cache, check internet, or relogin."
+      ],
+      "chunk_id": 665,
+      "topic": "StrikeX",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "What kind of information can I find in the Market Movers section of the FinX app?",
+      "expected_output": "The Market Movers section shows stocks with significant price, volume, or market movement in real time.",
+      "context": [
+        "Finx features › Market Movers\nQ: What does the Market Movers section show?\nA: It shows stocks with significant price, volume, or market movement in real time."
+      ],
+      "chunk_id": 912,
+      "topic": "Finx features",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "What are the timings for trading on NSE and BSE?",
+      "expected_output": "Normal market timings for NSE/BSE are 9:00 AM to 4:00 PM.",
+      "context": [
+        "Orders › Market Timings – Equity & F&O\nQ: What are normal market timings for NSE/BSE?\nA: 9:00 AM to 4:00 PM."
+      ],
+      "chunk_id": 419,
+      "topic": "Orders",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Who all can actually apply for an IPO through my FinX account, and is there any KYC criteria I need to meet first?",
+      "expected_output": "Anyone meeting the IPO eligibility criteria and KYC norms can apply for an IPO. Yes, KYC compliance is required beforehand.",
+      "context": [
+        "SLBM › Eligibility\nQ: Who is eligible to apply for an IPO?\nA: Anyone meeting the IPO eligibility and KYC norms can apply."
+      ],
+      "chunk_id": 573,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "My stock is currently trading at ₹500 - how much of a discount can I usually expect on the Rights Issue price compared to that?",
+      "expected_output": "A Rights Issue is typically offered at a discount to the current market price—for example, around a 20% discount. So if your stock trades at ₹500, the Rights Issue price could be approximately ₹400 per share.",
+      "context": [
+        "Corporate action › Rights Issue\nQ: Can you explain Rights Issue pricing with an example?\nA: If a stock trades at ₹500, a Rights Issue may be offered at a 20% discount, i.e., ₹400 per share."
+      ],
+      "chunk_id": 725,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "Where in the FinX app can I see how much the broker has funded through MTF under 'Choice Fund', how much cash I've put in myself under 'My Fund', and the net MTF amount used for my trades?",
+      "expected_output": "In the mobile application: broker's MTF funding amount appears under \"Choice Fund,\" your own cash contribution/margin appears under \"My Fund,\" and the net MTF funded amount (Cash Collateral – Funded by Broker) appears under the \"MTF Funding\" section, which is the amount on which interest is charged.",
+      "context": [
+        "MTF\nQ: Where can I see my MTF balance and funding details in the mobile application?\nA: In the mobile application, your MTF details are clearly shown under different sections for better visibility and understanding:\n1.        Total Funded by Broker:\no        The total amount funded by the broker under MTF is displayed in the “Choice Fund” section.\no        This shows how much the broker has financed for your MTF positions.\n2.        Customer Cash Collateral:\no        Your own cash contribution or margin is shown under the “My Fund” section.\no        This represents the amount you have kept as margin for your MTF stocks.\n3.        MTF Funding (Net Funding):\no        The MTF Funding section displays the net funded value, which is calculated as: Cash Collateral – Funded by Broker = Net Funding\no        This is the amount on which interest will be charged under MTF.\n4.        MTM and Margin Utilization:\no        Whenever there is an MTM (Mark-to-Market) movement in your MTF or F&O positions, the margin required to cover the loss is automatically blocked.\no        You can view this in the “Margin Utilized” section of the application.\no        This ensures your positions remain compliant with the exchange margin requirement at all times."
+      ],
+      "chunk_id": 40,
+      "topic": "MTF",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "I actually have two PAN cards with me, so is it fine to submit both when I go for offline verification of my demat account?",
+      "expected_output": "No, only one PAN per client is allowed for offline account verification. Submitting multiple PAN cards is not permitted, and any mismatch with existing KRA or broker records must be corrected before submission.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: Can multiple PAN cards be used for offline account verification?\nA: No. Only one PAN per client is allowed. Any mismatch with existing KRA or broker records must be corrected before submission."
+      ],
+      "chunk_id": 28,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "Does FinX have something like a community section, maybe called FinX Commune, where traders can chat with each other and share market views?",
+      "expected_output": "Yes, FinX Commune is a community feature where traders and investors share insights and discussions.",
+      "context": [
+        "Finx features › Research, Tools & Community\nQ: What is FinX Commune?\nA: FinX Commune is a community feature where traders and investors share insights and discussions."
+      ],
+      "chunk_id": 906,
+      "topic": "Finx features",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "Can a woman act as the Karta while opening an HUF demat account with Choice FinX?",
+      "expected_output": "Yes. Following a 2016 Supreme Court ruling, the eldest female member of a Hindu Undivided Family can act as the Karta, including for opening an HUF demat account with Choice FinX.",
+      "context": [
+        "Onboarding › HUF Account Opening\nQ: Can a female member be a Karta?\nA: Yes. After a Supreme Court ruling (2016), the eldest female member can also act as the Karta of an HUF."
+      ],
+      "chunk_id": 111,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Where exactly can I find the brokerage fee charged on each trade — is it shown in the contract note or the trade book on FinX?",
+      "expected_output": "Brokerage details for each trade are shown in both the contract note and the trade book on FinX.",
+      "context": [
+        "Charges › BROKERAGE\nQ: Where can I check my brokerage details?\nA: Brokerage details are available in your contract note and trade book."
+      ],
+      "chunk_id": 975,
+      "topic": "Charges",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "In my intraday and F&O trades, why is STT charged only on the sell side and not when I purchase?",
+      "expected_output": "STT is charged only on the sell side for intraday and F&O trades as per government regulations, which instruct exchanges to collect STT only on sell transactions in these segments.",
+      "context": [
+        "Charges › Securities Transaction Tax (STT / CTT)\nQ: Why is STT charged only on the sell side for intraday and F&O?\nA: This is as per government regulations. Exchanges are instructed to collect STT only on sell transactions in these segments."
+      ],
+      "chunk_id": 939,
+      "topic": "Charges",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Is stamp duty charged on selling shares as well, or does it only apply when I buy them?",
+      "expected_output": "Stamp duty is charged only on the buy side, not when you sell shares.",
+      "context": [
+        "Charges › Securities Transaction Tax (STT / CTT)\nQ: Is stamp duty charged on both buy and sell?\nA: No, stamp duty is charged only on the buy side."
+      ],
+      "chunk_id": 942,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "It's been quite a while and my dematerialisation request still hasn't gone through. What usually causes these delays, like issuer confirmation, signature mismatches, or document issues?",
+      "expected_output": "Delays in dematerialisation requests are usually caused by issuer confirmation, signature mismatch, or document discrepancies.",
+      "context": [
+        "DP related › DEMAT (Dematerialisation)\nQ: Why is my demat request taking so long?\nA: Delays can occur due to issuer confirmation, signature mismatch, or document discrepancies."
+      ],
+      "chunk_id": 311,
+      "topic": "DP related",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "I saw an STT deduction on my recent trade — is that a charge from FinX itself or a tax imposed by the government?",
+      "expected_output": "STT is a government-mandated tax on eligible trades, not a charge from FinX — it is applied automatically as per regulations.",
+      "context": [
+        "Charges › Securities Transaction Tax (STT / CTT)\nQ: Why am I charged STT on every trade?\nA: STT is mandatory on eligible trades as per government regulations and is applied automatically."
+      ],
+      "chunk_id": 945,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.75
+    },
+    {
+      "input": "When I trade options on StrikeX, what margins do I need to pay - like SPAN margin, Exposure margin, or Premium margin?",
+      "expected_output": "When trading options on StrikeX, the applicable margins are SPAN margin, Exposure margin, and Premium margin (the latter applicable specifically for sellers).",
+      "context": [
+        "StrikeX › Margins\nQ: What margins apply to options trading?\nA: SPAN margin, Exposure margin, and Premium margin (for sellers)."
+      ],
+      "chunk_id": 657,
+      "topic": "StrikeX",
+      "synthetic_input_quality": 0.4
+    },
+    {
+      "input": "I already have some eligible shares in my account — what's the process to submit a buyback application using the Choice FinX app or website?",
+      "expected_output": "**Via Choice FinX Mobile App:**\n1. Login to the app and go to the **Portfolio** section.\n2. If eligible, a **Buyback Banner** will appear below the portfolio valuation details.\n3. Click the banner and follow on-screen instructions.\n4. Enter the quantity you wish to tender and submit your request.\n\n**Via Choice FinX Web Platform:**\n1. Visit https://finx.choiceindia.com/ and login.\n2. On the Home Page, go to **Smart Investments > Buyback**.\n3. Select the eligible stock from the list and proceed as per on-screen instructions.\n\n**Note:** Ensure DDPI is active in your account, shares are unpledged/unfrozen, and you held them before the record date. On the last tendering day, applications must be submitted by 12:30 PM.",
+      "context": [
+        "Corporate action › Buyback\nQ: How to apply for  a buyback\nA: You can apply for the Buyback through the Choice FinX Mobile Application or the Web Platform.\nThrough the Choice FinX Mobile Application:\n\nLogin to the Choice FinX application.\nGo to the Portfolio section.\nIf you are eligible for the buyback and hold the respective stock, you will see a Buyback Banner below the portfolio valuation details.\nClick on the banner and proceed with the buyback application as per the on-screen instructions.\nEnter the quantity you wish to tender and submit your request.\nThrough the Choice FinX Web Platform:\n1. Open the Choice FinX website:\nhttps://finx.choiceindia.com/\n2. Login using your registered Mobile Number/User ID and Password.\n3. After successful login, you will be redirected to the Home Page.\n4. Under the Smart Investments section, click on Buyback.\n5. You will be able to view the list of stocks with active buyback opportunities.\n6. Select the eligible stock and proceed with the application as per the on-screen instructions.\n\nImportant Points:\n\nDDPI (Demat Debit and Pledge Instruction) must be active in your account to submit a buyback request.\nIf DDPI is not active, you can activate it by navigating to the Profile section of the FinX platform and completing the DDPI activation process.\nThe shares intended for buyback must be available in your Demat account and should not be pledged, frozen, or under any restriction at the time of application.\nBuyback eligibility is available only to clients who held the shares on or before the specified record date.\nIf the stock is not visible under the Buyback section, it may indicate that the holdings do not meet the eligibility criteria.\nOn the last day of the buyback tendering period, applications can be submitted only up to 12:30 PM."
+      ],
+      "chunk_id": 704,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "What's the process and paperwork needed to change my address offline for my Choice FinX account?",
+      "expected_output": "To modify your address offline: 1) Download the Account Modification Form from Choice Broking's website; 2) Fill it in as per your updated Address Proof; 3) Gather self-attested photocopies of valid Proof of Address documents (e.g., utility bill, passport, or bank statement); 4) Submit the form and documents either by courier to the Choice Broking office or in person at a Choice Broking branch.",
+      "context": [
+        "Modification › How to delete or inactive a bank account\nQ: Process to modify the Address Details in offline mode?\nA: To modify your bank details through the offline mode in Choice Broking, you'll need to follow these steps¹: \n    - Download the Account Modification Form: Visit Choice Broking's website and download the                 Account Modification Form. \n    - Fill in the Required Details: Fill out the form as per the updated Address Proof. \n    - Gather Required Documents: Collect necessary documents, including\n      Compile photocopies: Collect photocopies of valid Proof of Address (POA) documents, such as utility bills, a passport, or a bank statement.\n        Self-attest the documents: Sign the copies of your documents to self-attest them. \nCourier: Send the duly filled and signed modification form along with the photocopies of your bank proof documents to the Choice Broking office.\nBranch visit: Submit the documents in person at a Choice Broking branch."
+      ],
+      "chunk_id": 193,
+      "topic": "Modification",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "Why was I charged a courier/postage fee for my demat account request?",
+      "expected_output": "A courier/postage fee is charged because your physical documents need to be couriered to the depository for processing your demat request.",
+      "context": [
+        "Charges › Demat / Remat\nQ: Why is there a postage charge for demat?\nA: Postage charges apply for couriering physical documents to the depository for processing."
+      ],
+      "chunk_id": 1033,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "I sold some stock after keeping it in my demat account for around 8 months, so which report in the back office should I check to see that gain or loss - Cash Segment P&L, F&O Segment P&L, Short-Term Capital P&L, Long-Term Capital P&L, Trading P&L, or Realized & Unrealized P&L?",
+      "expected_output": "Since the stock was held for around 8 months (less than 12 months), you should check the **Short-Term Capital P&L** report to see the gain or loss.",
+      "context": [
+        "Reports › Profit & loss\nQ: What are the Types of P&L Reports?\nA: There are different types of P&L reports available in the back office:\n\n1. Cash Segment P&L Report: Shows profit or loss from equity delivery and intraday trades.\n\n2. F&O Segment P&L Report: Shows profit or loss from Futures and Options trading.\n\n3. Short-Term Capital P&L: Profit or loss generated from shares held for less than 12 months.\n\n4. Long-Term Capital P&L: Profit or loss generated from shares held for more than 12 months.\n\n5. Trading P&L: Covers intraday trading and F&O segment trades.\n\n6. Realized & Unrealized P&L:\n\no Realized P&L: Profit or loss on trades that are completely squared off.\n\no Unrealized P&L: Profit or loss on open positions that are not yet squared off.\n\n---"
+      ],
+      "chunk_id": 1085,
+      "topic": "Reports",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "What are some examples of voluntary corporate actions that could show up on my demat account?",
+      "expected_output": "Examples of voluntary corporate actions include Buyback (Tender Offer), Tender Offers, and Rights Entitlement subscription.",
+      "context": [
+        "Corporate action › Corporate Action – Basics\nQ: Examples of Voluntary Corporate Actions?\nA: Buyback (Tender Offer), Tender Offers, Rights Entitlement subscription."
+      ],
+      "chunk_id": 680,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Sometimes my order only gets partly executed or fills at a price way off from what I expected when the market is really volatile. Why does that happen?",
+      "expected_output": "This happens due to volatility risk—frequent price changes during highly volatile markets can lead to partial execution, no execution, or execution at prices very different from expected levels, resulting in losses.",
+      "context": [
+        "RMS › Basic Market Risks\nQ: What is volatility risk?\nA: Volatility refers to frequent price changes. High volatility can lead to partial execution, no execution, or execution at prices very different from expected levels, resulting in losses."
+      ],
+      "chunk_id": 758,
+      "topic": "RMS",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "If I apply for shares in an IPO through FinX, is there a guarantee that I'll earn a profit once they get listed?",
+      "expected_output": "No, there is no guarantee. IPO investments are subject to market risk, so profit upon listing is not assured.",
+      "context": [
+        "SLBM › IPO Process Understanding\nQ: Is IPO investment guaranteed to give profit?\nA: No, IPO investments are subject to market risk."
+      ],
+      "chunk_id": 589,
+      "topic": "SLBM",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Where exactly are my shares held when I trade through FinX - does Choice keep them or are they with a depository like NSDL/CDSL?",
+      "expected_output": "Your shares are held electronically with the depository (NSDL or CDSL), not with FinX. FinX only acts as your Depository Participant, facilitating access to your holdings.",
+      "context": [
+        "DP related › DP BASICS & DEMAT ACCOUNT\nQ: Who actually holds my shares – FinX or the exchange?\nA: Your shares are held electronically with the depository (NSDL or CDSL). FinX acts only as your Depository Participant."
+      ],
+      "chunk_id": 261,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "Can I open a demat account with Choice FinX even if I haven't got a bank account yet?",
+      "expected_output": "No, you cannot. A linked bank account is mandatory for opening an Individual Demat Account, as it is required for fund transfer and dividend credit purposes.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: Can I open an Individual Demat Account without a bank account?\nA: No, a linked bank account is mandatory for fund transfer and dividend credit purposes"
+      ],
+      "chunk_id": 64,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "If I place a stop-loss order on FinX, is it guaranteed to go through as soon as the trigger price is reached?",
+      "expected_output": "No. A stop-loss order only activates once the trigger price is reached, converting into a market or limit order—execution itself is not guaranteed.",
+      "context": [
+        "RMS › Order Types\nQ: What is a stop-loss order?\nA: A stop-loss order activates when a predefined price is reached and converts into a market or limit order. Execution is not guaranteed."
+      ],
+      "chunk_id": 763,
+      "topic": "RMS",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "When doing an offline or off-market transfer of shares, when would I actually need to fill out a DIS slip?",
+      "expected_output": "A DIS slip is needed when transferring shares offline or off-market.",
+      "context": [
+        "DP related › DIS BOOKLET & OFF-MARKET TRANSFER\nQ: When do I need to use a DIS slip?\nA: DIS slips are used for offline or off-market share transfers."
+      ],
+      "chunk_id": 352,
+      "topic": "DP related",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "We operate as a partnership firm - can we open a Corporate Demat Account with FinX?",
+      "expected_output": "Yes, partnership firms can open a Corporate Demat Account by providing the partnership deed.",
+      "context": [
+        "Onboarding › Corporate Account Opening\nQ: Can LLPs and partnership firms open a Corporate Demat Account?\nA: Yes, LLPs and registered partnership firms can open one by providing LLP agreements or partnership deeds"
+      ],
+      "chunk_id": 154,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "Can I end up losing all my money if I do options trading on FinX?",
+      "expected_output": "Yes, options are wasting assets and may expire worthless, meaning you can lose all the money invested in them.",
+      "context": [
+        "RMS › Options & Expiry Risk\nQ: Can I lose all money in options trading?\nA: Yes. Options are wasting assets and may expire worthless."
+      ],
+      "chunk_id": 773,
+      "topic": "RMS",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Is there any charge involved if I want to reactivate my demat account?",
+      "expected_output": "No, there are no charges for demat account reactivation.",
+      "context": [
+        "Modification › REACTIVATION\nQ: Are there any charges for demat account reactivation?\nA: No, charges."
+      ],
+      "chunk_id": 245,
+      "topic": "Modification",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "Can I put INR directly into my NRE trading account, or is that not allowed?",
+      "expected_output": "No, that is not allowed. NRE accounts can only be funded through foreign currency remittances, not direct INR deposits.",
+      "context": [
+        "Onboarding › NRI & NRO Account\nQ: Can money be deposited in Indian Rupees in an NRE account?\nA: No, NRE accounts are funded only through foreign currency remittances."
+      ],
+      "chunk_id": 169,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Where can I check how much STT was cut from my trade — does the contract note or trade book show that?",
+      "expected_output": "STT deductions are clearly shown in both your contract note and trade book.",
+      "context": [
+        "Charges › Securities Transaction Tax (STT / CTT)\nQ: Where can I see STT deductions?\nA: STT is clearly shown in your contract note and trade book."
+      ],
+      "chunk_id": 940,
+      "topic": "Charges",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Do I need to pay the demat AMC every year, or is it just a one-time payment?",
+      "expected_output": "Yes, the demat AMC is charged annually (every year) as per the selected plan—it is not a one-time payment.",
+      "context": [
+        "Charges › AMC (Inactive / Active / Corporate)\nQ: Is AMC charged every year?\nA: Yes, AMC is charged annually as per the selected plan."
+      ],
+      "chunk_id": 1002,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "How can I activate F&O trading on my account using the FinX app?",
+      "expected_output": "Log in to the Choice Broking app, go to \"Profile > Profile Modification\" (or \"Account Details\") > \"Segments,\" click \"Activate segment(s),\" select F&O, then upload an eligibility document (e.g., 6-month bank statement, Form 16, or ITR acknowledgement) manually, confirm via e-sign/Aadhaar OTP, and wait 1–2 business days for activation.",
+      "context": [
+        "Modification › SEGMENT MODIFICATION\nQ: Process to activate the segments through the application\nA: Step-by-step activation process:-\nLog in: Access your Choice Broking account through the mobile app or website. \nNavigate to segments: Go to the \"Profile>Profile Modification\" or \"Account Details\" section, and then select \"Segments\". \nStart activation: Click on \"Activate segment(s)\" or \"Activate Segment\". \nChoose the segment you want to activate (e.g., F&O, Currency).\nUpload the documents\nManual upload: Select \"upload manually\" and choose from a list of accepted documents, such as a 6-month bank statement, latest Form 16, or ITR acknowledgement. Ensure the document is clear and meets eligibility criteria. \nConfirm: Follow the prompts to confirm your request. You may need to e-sign or provide an OTP from your Aadhaar. \nWait for activation: The segment will be activated within 1–2 business days. You can check the status in your \"Account Details\" or will receive a notification once it's complete."
+      ],
+      "chunk_id": 217,
+      "topic": "Modification",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "I just installed the Choice FinX app on my Android phone from the Play Store - what's the process to sign in for the very first time using my Client ID or Mobile Number along with my 1FA Password, and how do I set up 2FA verification plus a screen lock on my device?",
+      "expected_output": "Open the app, enter your Mobile Number or Client ID along with your 1FA Password, then click Login. When prompted, enable 2FA security and set up a device screen lock. Once complete, you can access the app.",
+      "context": [
+        "Login › LOGIN\nQ: How do I log in to the Choice Finx mobile app?\nA: Download Choice Finx App from the Google Play Store.\n\nOpen the app, enter your Mobile Number or Client ID and 1FA Password, then click Login.\n\nEnable 2FA security when prompted and set up a device screen lock.\n\nOnce complete, you can access the app."
+      ],
+      "chunk_id": 810,
+      "topic": "Login",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "Hi, what's the process to apply for an IPO using the FinX app?",
+      "expected_output": "To apply for an IPO using the Choice FinX App, go to Dashboard > IPO section.",
+      "context": [
+        "SLBM › Applying for IPO\nQ: Where can I apply for IPO in the Choice FinX App?\nA: You can apply through the Choice FinX App- Dashboard > IPO section"
+      ],
+      "chunk_id": 572,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "How do I find out if my client's account closure e-sign has gone through on CONNECT? I tried searching under the Stock Market section in Account Closure Listing using their Client ID but wasn't sure how to check the status.",
+      "expected_output": "To check the e-sign status, log in to CONNECT, click **Stock Market**, select **Account Closure Listing**, and search using the **Client ID** — the status will be displayed in the search results.",
+      "context": [
+        "Account Closure › Step 2\nQ: Step 5\nA: To check the e-sign status of a client, please follow the steps below in CONNECT:\n\nLog in to CONNECT\n\nClick on Stock Market\n\nSelect Account Closure Listing\n\nSearch using the Client ID"
+      ],
+      "chunk_id": 862,
+      "topic": "Account Closure",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "We already have a company demat account with you — can we still participate in things like rights issues, buybacks, or bonus share credits through it?",
+      "expected_output": "Yes, corporate entities can participate in buybacks, rights issues, dividends, and bonus issues using their existing Corporate Demat Account.",
+      "context": [
+        "Onboarding › How to open a corporate trading acc where client already holds an cdsl dp acc\nQ: Can corporate entities participate in buybacks and rights issues?\nA: Yes, they can apply for buybacks, rights issues, dividends, and bonus issues using their Corporate Demat Account."
+      ],
+      "chunk_id": 160,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "After I execute a buy or sell order, what's the typical timeframe for the shares to actually reflect in or get removed from my demat account?",
+      "expected_output": "Shares are debited or credited according to exchange settlement timelines. Any delay or shortfall in this process may result in provisional debits or square-offs to your account.",
+      "context": [
+        "RMS › System & Settlement Risks\nQ: When are shares debited or credited after trading?\nA: Settlement follows exchange timelines. Any delay or shortfall can result in provisional debits or square-offs."
+      ],
+      "chunk_id": 766,
+      "topic": "RMS",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "My AMO got rejected on FinX, what could be causing that?",
+      "expected_output": "Your AMO order may have been rejected due to one of the following reasons: it fell outside the permissible price range, there was a margin shortfall in your account, or there were exchange-imposed restrictions in place.",
+      "context": [
+        "Orders › AMO (After Market Orders)\nQ: Can AMO orders be rejected?\nA: Yes, due to price range, margin shortfall, or exchange restrictions."
+      ],
+      "chunk_id": 411,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "I'm trying to reach customer care from within the FinX app - what's the process, and are there options like live chat or raising a ticket under the Support section?",
+      "expected_output": "Go to the Support section in the app, where you can use live chat or raise a support ticket to contact customer care.",
+      "context": [
+        "Finx features › Support & Help\nQ: How can I contact customer support through the app?\nA: Go to Support and use live chat or raise a support ticket."
+      ],
+      "chunk_id": 929,
+      "topic": "Finx features",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Can Choice FinX help me figure out which mutual funds would be a good fit for my investments?",
+      "expected_output": "Yes. Choice FinX's research team provides recommendation sheets containing suggested mutual fund schemes for your investment planning.",
+      "context": [
+        "Mutual Fund\nQ: Can I get Mutual Fund recommendations?\nA: Yes. Our research team provides recommendation sheets containing suggested schemes for investment planning."
+      ],
+      "chunk_id": 12,
+      "topic": "Mutual Fund",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "Where do I need to send my documents to book an NCD request — is there a specific email ID I should use?",
+      "expected_output": "Yes, email the required documents and details to ncd.support@choiceindia.com.",
+      "context": [
+        "SLBM › NCD\nQ: Where should the NCD booking request be sent?\nA: The client should email the required documents and details to\nncd.support@choiceindia.com"
+      ],
+      "chunk_id": 609,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "If I want to withdraw my demat account application, can you just mark it as 'Not Interested' or delete it from the system based on my verbal request, or do I need to confirm this through my registered email or phone number first?",
+      "expected_output": "You must confirm the withdrawal request through your registered email or registered phone number—a verbal request alone is not sufficient. This ensures authenticity and prevents misuse; requests from unregistered channels cannot be processed, and the request will be documented for audit purposes.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: Can we mark a lead as “Not Interested” or delete it if the client requests it?\nA: Yes, but only if the client explicitly requests it through their registered email or registered phone number. This ensures authenticity and prevents misuse. If the client contacts from an unregistered channel, the request cannot be processed. Proper documentation of the client’s request should be maintained for audit purposes."
+      ],
+      "chunk_id": 77,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "What's the benefit of setting up a GTT order compared to manually placing a new order each day?",
+      "expected_output": "**Answer:** A GTT order eliminates the need to watch the market continuously, as it automatically executes once the price condition is met, making it especially useful for long-term investors planning their entry and exit points.",
+      "context": [
+        "Orders › GTC & GTD Orders\nQ: Benifts of Gtt order\nA: •        No need to watch the market continuously.\n•        Automatically executes when price condition meets.\n•        Useful for long-term investors for entry and exit planning"
+      ],
+      "chunk_id": 418,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "During what hours does the Post-Closing session stay open for placing orders?",
+      "expected_output": "The Post-Closing session stays open from 3:40 PM to 4:00 PM.",
+      "context": [
+        "Orders › Post-Closing Session\nQ: What are Post-Closing session timings?\nA: 3:40 PM to 4:00 PM."
+      ],
+      "chunk_id": 426,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "I just authorized a share transfer through CDSL EASIEST/NSDL SPEED-e online, but how do I confirm if the transfer actually got processed?",
+      "expected_output": "You can confirm the transfer status by logging into the CDSL EASIEST or NSDL SPEED-e portal and checking the transfer status there.",
+      "context": [
+        "DP related › CDSL EASI / EASIEST & NSDL SPEED-e\nQ: Where can I see the status of my online transfer?\nA: You can track the transfer status through the CDSL or NSDL portal after login."
+      ],
+      "chunk_id": 302,
+      "topic": "DP related",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "As expiry day gets closer, does RMS start asking for delivery margin in stages, and if so, what percentage would I need to keep ready?",
+      "expected_output": "Yes, as expiry approaches, RMS may require delivery margin to be collected in phases, with up to 100% delivery margin required near expiry.",
+      "context": [
+        "RMS › Expiry-Day Restrictions\nQ: What margin is required near expiry?\nA: Up to 100% delivery margin may be required in phases."
+      ],
+      "chunk_id": 802,
+      "topic": "RMS",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "What does Theta mean for the option greeks shown on StrikeX?",
+      "expected_output": "Theta represents the time decay of option premium.",
+      "context": [
+        "StrikeX › Key Metrics Explained\nQ: What is Theta?\nA: It represents time decay of option premium."
+      ],
+      "chunk_id": 644,
+      "topic": "StrikeX",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "Can I edit or modify my GTC order before it's executed?",
+      "expected_output": "Yes, GTC/GTD orders can be modified at any time before they are executed or cancelled.",
+      "context": [
+        "Orders › GTC & GTD Orders\nQ: Can GTC/GTD orders be modified?\nA: Yes, until the order is executed or cancelled."
+      ],
+      "chunk_id": 415,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "Is the brokerage charge fixed for all users, or does it differ from customer to customer on Choice FinX?",
+      "expected_output": "Standard brokerage applies to all clients unless a customized plan is approved.",
+      "context": [
+        "Charges › BROKERAGE\nQ: Is brokerage same for all clients?\nA: Standard brokerage applies to all clients unless a customized plan is approved."
+      ],
+      "chunk_id": 971,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "If I don't manually close my in-the-money options on StrikeX before they expire, what happens to those positions?",
+      "expected_output": "ITM options that aren't manually squared off are auto-exercised and cash-settled.",
+      "context": [
+        "StrikeX › Expiry & Settlement\nQ: What happens if positions are not squared off on expiry?\nA: ITM options are auto-exercised and cash-settled."
+      ],
+      "chunk_id": 661,
+      "topic": "StrikeX",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "I'm trying to add funds to my trading account via UPI on the FinX app but I'm not sure what details I need to enter - can you guide me through the process?",
+      "expected_output": "To add funds via UPI on the app: Tap **Deposit** to open the Pay-in page, then enter the **Amount**, select **UPI** as the Transfer Mode, enter your **UPI ID** and tap **Verify**, confirm your **Bank Details** (default account shown, or change if needed), and finally tap **PAY IN**.",
+      "context": [
+        "Funds › Payin And Payout and mode of payment\nQ: How can client do Payin through choice app in his trading a/c?c\nA: Deposit - Tapping Deposit will bring up the Pay-in page. Below information needs to be entered\na.        Amount - Enter the amount\n\nb.        Transfer Mode - Select from UPI or Net Banking\n\nc.        UPI ID - Enter UPI ID and Tap Verify\n\nd.         Bank Details - Select the Bank you'd like to transfer from your default selected account will be shown unless you want to change it.\ne.        Tap PAY IN"
+      ],
+      "chunk_id": 873,
+      "topic": "Funds",
+      "synthetic_input_quality": 0.85
+    },
+    {
+      "input": "I want to report an unauthorized trade on my account - what's the very first thing that happens once my complaint is logged?",
+      "expected_output": "Once your complaint is logged, the first step is that we identify the client and note the date and nature of the complaint.",
+      "context": [
+        "UT › Basic Complaint Intake\nQ: What is the first step after receiving a UT complaint?\nA: We first identify the client and note the date and nature of the complaint."
+      ],
+      "chunk_id": 478,
+      "topic": "UT",
+      "synthetic_input_quality": 0.2
+    },
+    {
+      "input": "If I take spread or hedged trades on StrikeX, will the margin needed be less than what's charged for regular non-hedged positions?",
+      "expected_output": "Yes—on StrikeX, spread and hedged positions carry lower margin requirements compared to regular non-hedged positions.",
+      "context": [
+        "StrikeX › Margins\nQ: Are margins reduced for hedged strategies?\nA: Yes, spread and hedged positions have lower margin requirements."
+      ],
+      "chunk_id": 658,
+      "topic": "StrikeX",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "I placed an OFS order for 5000 shares but a mutual fund applied for 10000 shares in the same offer - why does my allotment end up being lower than what the mutual fund gets?",
+      "expected_output": "Your order of 5,000 shares (₹5,00,000) falls under the **retail category**, while the mutual fund's order of 10,000 shares (₹10,00,000) qualifies it as an **institutional investor**. Institutional investors are given greater access to the OFS, so the mutual fund receives a higher allotment share compared to retail investors like you.",
+      "context": [
+        "SLBM › OFS ( OFFER FOR SALE )\nQ: Example of OFS\nA: Suppose ABC company is raising capital through OFS by selling shares at ₹100 per share.  \n\nNow Mr X bids for 5,000 shares, thus making an order for a total of ₹5,00,000.  \n\nAt the same time, a mutual fund called DEF Capital Fund also places an order for 10,000 shares, i.e. an order of around ₹10,00,000. \n\nMr X will fall under the retail category and may receive a lower share of the overall OFS. \n\nOn the other hand, DEF Capital will be counted as an institutional investor and will have greater access to the OFS."
+      ],
+      "chunk_id": 594,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "If my order only gets partially executed, do I still have to pay brokerage charges for that filled portion?",
+      "expected_output": "Yes, brokerage is charged on the executed portion of the trade.",
+      "context": [
+        "Charges › BROKERAGE\nQ: Is brokerage charged on partial execution?\nA: Yes, brokerage is charged on the executed portion of the trade."
+      ],
+      "chunk_id": 968,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "What's the actual difference between bonds and debentures when it comes to risk level and who typically issues them?",
+      "expected_output": "Bonds are issued by governments, PSUs, and corporations and generally carry lower risk (often secured), while debentures are issued mostly by corporates and carry higher risk (can be secured or unsecured).",
+      "context": [
+        "SLBM › Bonds\nQ: Bonds vs Debentures (Quick Comparison)\nA: AspectBondsDebenturesIssuerGovt, PSU, CorporateMostly corporatesSecurityOften securedCan be secured/unsecuredRiskGenerally lowerHigherMarketHighly regulatedRegulated"
+      ],
+      "chunk_id": 604,
+      "topic": "SLBM",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Every time I sell stocks from my demat account, I notice a DP charge deducted — what's this fee for and why is it applied?",
+      "expected_output": "DP charges are fees levied by the Depository Participant for processing demat account transactions like selling shares. This is why you see this deduction each time you sell stocks from your demat account.",
+      "context": [
+        "Charges › DP CHARGES\nQ: What are DP charges?\nA: DP charges are fees levied by the Depository Participant for processing demat account transactions like selling shares."
+      ],
+      "chunk_id": 985,
+      "topic": "Charges",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "My minor's demat account has some shares in it — will the dividend actually get credited into that same account?",
+      "expected_output": "Yes, dividends (along with interest and other benefits) from investments are credited directly into the minor's account and are managed by the guardian until the minor becomes an adult.",
+      "context": [
+        "Onboarding › MINOR ACCOUNT OPENING\nQ: Can the minor receive dividends or interest?\nA: Yes, all dividends, interest, and other benefits from investments in the account are credited to the account and are managed by the guardian until the minor becomes an adult."
+      ],
+      "chunk_id": 137,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "Even though I made a loss on my trade, STT was still deducted from my account. Why does this happen?",
+      "expected_output": "STT is levied on the transaction value of your trade, not on whether you made a profit or loss—so it applies regardless of the trade's outcome.",
+      "context": [
+        "Charges › Securities Transaction Tax (STT / CTT)\nQ: Why is STT charged even when I made a loss?\nA: STT is calculated on the transaction value, not on profit or loss."
+      ],
+      "chunk_id": 946,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "My newborn baby is a member of our family's HUF - do I need to update the demat/trading account with Choice FinX to reflect this, or is it added automatically?",
+      "expected_output": "A newborn becomes a member of the HUF automatically by birth; no separate action is needed to add them as a member. However, you should still inform Choice FinX to update the demat/trading account records to reflect the change in family members, as account details should stay current.",
+      "context": [
+        "Onboarding › HUF Account Opening\nQ: Can a minor be a member of an HUF?\nA: Yes, a minor child automatically becomes a member of the HUF by birth."
+      ],
+      "chunk_id": 112,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "One of my stocks just announced a buyback - how do I submit my shares for it through FinX, and what's the process they use to decide how many shares actually get accepted?",
+      "expected_output": "To submit your shares for a buyback through FinX, you tender your shares as an eligible shareholder. Acceptance of the tendered shares is not guaranteed in full—it is determined based on the entitlement ratio, which decides how many of your tendered shares are actually accepted.",
+      "context": [
+        "Corporate action › Buyback\nQ: How does the tender process work?\nA: Eligible shareholders tender shares; acceptance is based on entitlement ratio."
+      ],
+      "chunk_id": 702,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "Do I have to pay tax on dividends or buybacks I receive, and what should I generally know about tax on my investments?",
+      "expected_output": "Yes, dividends and buybacks may have tax implications, as these corporate actions can be taxable events for investors.",
+      "context": [
+        "Corporate action › General Investor Queries\nQ: Are corporate actions taxable?\nA: Yes, dividends and buybacks may have tax implications."
+      ],
+      "chunk_id": 752,
+      "topic": "Corporate action",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "What exactly does trigger price mean when placing a stop-loss order on FinX?",
+      "expected_output": "The trigger price is the price at which the stop-loss order becomes active.",
+      "context": [
+        "Orders › Stop-Loss Orders\nQ: What is a trigger price?\nA: The trigger price is the price at which the stop-loss order becomes active."
+      ],
+      "chunk_id": 392,
+      "topic": "Orders",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "When I apply for an IPO, does the money get debited from my account immediately or only after allotment?",
+      "expected_output": "The money is not debited immediately—it is only blocked at the time of application and then debited only after allotment.",
+      "context": [
+        "SLBM › Applying for IPO\nQ: Will my money be deducted immediately when I apply?\nA: No, the amount is blocked and debited only after allotment."
+      ],
+      "chunk_id": 571,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "Can a Hindu Undivided Family (HUF) open a demat or trading account with Choice FinX as a partner in a partnership firm?",
+      "expected_output": "Yes, an HUF can be a partner in a partnership firm through its Karta, who acts as its representative.",
+      "context": [
+        "Onboarding › HUF Account Opening\nQ: Can an HUF become a partner in a firm?\nA: Yes, an HUF can be a partner in a partnership firm through its Karta as a representative."
+      ],
+      "chunk_id": 113,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 1.0
+    },
+    {
+      "input": "Other brokers say they don't charge AMC at all, so why does FinX still charge it after the first free year instead of just waiving it for good?",
+      "expected_output": "FinX offers free AMC only for the first year and then charges a transparent AMC thereafter, whereas brokers claiming \"no AMC\" typically recover these costs elsewhere in hidden or indirect ways.",
+      "context": [
+        "Charges › Free services vs other brokers (comparison & objections)\nQ: Free brokers don’t charge AMC. Why does FinX?\nA: FinX offers free AMC for the first year and maintains a transparent AMC structure thereafter, unlike some brokers that recover costs elsewhere."
+      ],
+      "chunk_id": 1078,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.8
+    },
+    {
+      "input": "For a refund to go through, does Choice FinX need both a phone call confirmation and an email confirmation from me, or is just one of them enough?",
+      "expected_output": "Both are required — Choice FinX needs both a call confirmation and an email confirmation from you for the refund to be processed.",
+      "context": [
+        "UT › Situation H: Refund Processing\nQ: Is client confirmation required for refund?\nA: Yes, call confirmation and email confirmation from the client are required."
+      ],
+      "chunk_id": 503,
+      "topic": "UT",
+      "synthetic_input_quality": 0.1
+    },
+    {
+      "input": "If I sell the same stock in multiple lots within a single day, do I get charged DP fees separately for each of those sell transactions?",
+      "expected_output": "No, DP charges are applied once per ISIN per day, regardless of how many separate sell lots or transactions you make for that stock.",
+      "context": [
+        "Charges › Dp charges been aplicable on multiple transaction how\nQ: If I sell multiple shares of the same company, will I be charged multiple times?\nA: No, you will be charged once per ISIN, regardless of quantity sold."
+      ],
+      "chunk_id": 992,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "What's the process for turning my physical share certificates into electronic/demat form through Choice FinX?",
+      "expected_output": "Dematerialisation is the process of converting physical share certificates into electronic form in your demat account.",
+      "context": [
+        "DP related › DEMAT (Dematerialisation)\nQ: What does dematerialisation mean?\nA: Dematerialisation is the process of converting physical share certificates into electronic form in your demat account."
+      ],
+      "chunk_id": 307,
+      "topic": "DP related",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "I noticed a trade I never placed in my account — why does it matter so much how quickly this kind of unauthorized transaction gets sorted out?",
+      "expected_output": "Handling unauthorized transactions like UTs quickly is critical because delays can result in financial loss, regulatory risk, and damage to client trust.",
+      "context": [
+        "UT › Final Understanding\nQ: Why is UT handling considered critical?\nA: Because it involves financial loss, regulatory risk, and client trust."
+      ],
+      "chunk_id": 526,
+      "topic": "UT",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "Can I get my DDPI activated through an offline process instead of doing it online?",
+      "expected_output": "Yes, you can raise a request for DDPI (Demat Debit and Pledge Instruction) activation through the offline mode.",
+      "context": [
+        "Modification › DDPI ACTIVATION\nQ: can we raise a request through the offline?\nA: Yes, you can raise a request for DDPI (Demat Debit and Pledge Instruction) activation through the offline mode"
+      ],
+      "chunk_id": 254,
+      "topic": "Modification",
+      "synthetic_input_quality": 0.7
+    },
+    {
+      "input": "Every time I try to log into the mock trading session, it tells me my login credentials are wrong, but I know they're right. Is this a known glitch where the system shows a fake invalid login error during mock trading even when the details are correct?",
+      "expected_output": "Yes, this is a known issue. Your credentials are correct, but the system may temporarily show invalid login errors during mock participation.",
+      "context": [
+        "Login › Additional Login & Security\nQ: Will my credentials be wrong during mock participation?\nA: No, credentials are correct, but the system may temporarily show invalid login errors."
+      ],
+      "chunk_id": 844,
+      "topic": "Login",
+      "synthetic_input_quality": 0.5
+    },
+    {
+      "input": "Most of my holdings are concentrated in a single stock right now — will I need to add more funds or trim my position within 7 days because of the concentration risk rule, or could my shares just get liquidated instead?",
+      "expected_output": "If your holdings are excessively concentrated in a single stock, you will need to add funds or reduce the position within 7 days; failure to do so may result in liquidation of your shares.",
+      "context": [
+        "RMS › Penalty & Concentration Risk\nQ: What is stock concentration risk?\nA: Excess exposure in one stock may require fund addition or reduction within 7 days, else liquidation may occur."
+      ],
+      "chunk_id": 800,
+      "topic": "RMS",
+      "synthetic_input_quality": 0.3
+    },
+    {
+      "input": "I'm the first-named holder on a joint bank account - can I link it to my demat account that's only in my name?",
+      "expected_output": "Yes, you can link your joint bank account to your individual Demat account, as long as you are the first holder in that bank account.",
+      "context": [
+        "Onboarding › Individual Demat Account\nQ: Can I link my joint bank account to my individual Demat account if I am the first holder in that bank account?\nA: Yes, ! You can add your joint bank account to your individual Demat account, as long as you are the first holder in that bank account."
+      ],
+      "chunk_id": 92,
+      "topic": "Onboarding",
+      "synthetic_input_quality": 0.9
+    },
+    {
+      "input": "Why does my margin used figure factor in things like brokerage charges and MTM losses?",
+      "expected_output": "Margin utilized includes applicable charges, Mark-to-Market (MTM) losses, and carried-forward positions, which is why these factors are reflected in your margin used figure.",
+      "context": [
+        "Orders › Basic Question Bank\nQ: What is margin utilize\nA: We would like to inform you that margin utilize contains applicable charges, Mark-to-Market (MTM) losses, or carried-forward positions."
+      ],
+      "chunk_id": 471,
+      "topic": "Orders",
+      "synthetic_input_quality": 0.6
+    },
+    {
+      "input": "What's the fee for pledging my shares? I heard pledge creation costs Rs11.80 with GST included, is that right?",
+      "expected_output": "Yes, that's correct. Pledge creation is charged at Rs11.80, including GST.",
+      "context": [
+        "Charges › Pledge / Unpledge / Invocation\nQ: How much is charged for pledging shares?\nA: Pledge creation is charged at Rs11.80 including gst"
+      ],
+      "chunk_id": 1021,
+      "topic": "Charges",
+      "synthetic_input_quality": 0.3
+    },
+    {
+      "input": "For SLBM contracts, what month does the letter 'X' actually refer to? I noticed X3 is used for the March contract, so what does the 'X' stand for exactly?",
+      "expected_output": "X3 represents the March contract, but the letter code \"X\" itself refers to the November contract month in standard futures month codes—so its use here labeling \"March\" appears inconsistent with typical futures conventions, as the context does not further clarify the discrepancy.",
+      "context": [
+        "SLBM › SLBM Series Explanation\nQ: What does X3 series represent?\nA: It represents the March contract."
+      ],
+      "chunk_id": 550,
+      "topic": "SLBM",
+      "synthetic_input_quality": 0.6
+    }
+  ]
+}
