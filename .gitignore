@@ -221,3 +221,7 @@ __marimo__/
 # Eval result artifacts (keep the dir, ignore generated CSV/PNG)
 evals/embeddings/results/*
 !evals/embeddings/results/.gitkeep
+
+# CHO-19 retrieval-quality eval outputs
+evals/quality/results/*
+!evals/quality/results/.gitkeep
