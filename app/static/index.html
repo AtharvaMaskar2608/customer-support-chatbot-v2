@@ -1,0 +1,85 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Choice FinX support — test client</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 15px/1.5 system-ui, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; }
+  h1 { font-size: 1.1rem; }
+  #log { border: 1px solid #8884; border-radius: 8px; padding: 1rem; min-height: 240px; }
+  .msg { margin: .6rem 0; }
+  .user { font-weight: 600; }
+  .step { color: #888; font-style: italic; font-size: .9em; }
+  .step.done::before { content: "✓ "; color: #3a3; }
+  .cites { font-size: .8em; color: #888; }
+  .report a { font-weight: 600; }
+  .row { display: flex; gap: .5rem; margin-top: 1rem; }
+  input { flex: 1; padding: .5rem; border-radius: 6px; border: 1px solid #8886; }
+  button { padding: .5rem .9rem; border-radius: 6px; border: 0; background: #3358dd; color: #fff; cursor: pointer; }
+  .widget { margin: .6rem 0; padding: .6rem; border: 1px dashed #8886; border-radius: 6px; }
+</style>
+<h1>Choice FinX support — test client</h1>
+<div class="row">
+  <input id="jwt" placeholder="(optional) paste your browser FinX Authorization JWT to enable report tools">
+</div>
+<div id="log"></div>
+<div class="row">
+  <input id="q" placeholder="Ask about your account, a product, or a report…" autofocus>
+  <button id="send">Send</button>
+</div>
+<script>
+// Stateless client: we keep the full message history and resend it each turn.
+const log = document.getElementById('log');
+let messages = [];
+let pendingWidgetValues = {};
+
+function el(cls, text) { const d = document.createElement('div'); d.className = cls; if (text) d.textContent = text; log.appendChild(d); return d; }
+
+async function send(text, widgetValues) {
+  if (text) { el('msg user', text); messages.push({ role: 'user', content: text }); }
+  const answerEl = el('msg'); let answer = '';
+  const activeSteps = {};
+
+  const finxJwt = (document.getElementById('jwt').value || '').trim() || null;
+  const resp = await fetch('/chat', {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ messages, widget_values: widgetValues || {}, finx_jwt: finxJwt }),
+  });
+  const reader = resp.body.getReader(); const dec = new TextDecoder(); let buf = '';
+  while (true) {
+    const { value, done } = await reader.read(); if (done) break;
+    buf += dec.decode(value, { stream: true });
+    const frames = buf.split('\n\n'); buf = frames.pop();
+    for (const f of frames) {
+      const ev = (f.match(/^event: (.*)$/m) || [])[1];
+      const data = JSON.parse((f.match(/^data: (.*)$/m) || [])[1] || '{}');
+      if (ev === 'token') { answer += data.text; answerEl.textContent = answer; }
+      else if (ev === 'tool_use') { activeSteps[data.tool] = el('step', data.label); }
+      else if (ev === 'tool_result') { const s = activeSteps[data.tool]; if (s) { s.textContent = data.summary; s.classList.add('done'); } }
+      else if (ev === 'citations') { el('cites', 'Sources: ' + data.citations.map(c => `#${c.id} ${c.topic}`).join(', ')); }
+      else if (ev === 'report') { const d = el('msg report'); d.innerHTML = data.summary + (data.url ? ` — <a href="${data.url}" target="_blank">open</a>` : (data.content_b64 ? ` — <a download="${data.filename||'report.pdf'}" href="data:${data.mime};base64,${data.content_b64}">download</a>` : '')); }
+      else if (ev === 'ui_request') { renderWidget(data); }
+      else if (ev === 'error') { el('step', '⚠ ' + data.message); }
+    }
+  }
+  if (answer) messages.push({ role: 'assistant', content: answer });
+}
+
+function renderWidget(data) {
+  const w = el('widget'); w.textContent = data.prompt || 'Please choose:';
+  if (data.widget === 'date_picker') {
+    const inp = document.createElement('input'); inp.type = 'date'; w.appendChild(inp);
+    const b = document.createElement('button'); b.textContent = 'Submit';
+    b.onclick = () => { const [y, m, d] = inp.value.split('-'); send(null, { [data.correlation_id]: `${d}-${m}-${y}` }); };
+    w.appendChild(b);
+  } else if (data.widget === 'choice') {
+    for (const opt of (data.spec.options || [])) {
+      const b = document.createElement('button'); b.textContent = opt; b.style.marginLeft = '.4rem';
+      b.onclick = () => send(opt, { [data.correlation_id]: opt }); w.appendChild(b);
+    }
+  }
+}
+
+document.getElementById('send').onclick = () => { const q = document.getElementById('q'); if (q.value.trim()) { send(q.value.trim()); q.value = ''; } };
+document.getElementById('q').addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('send').click(); });
+</script>
