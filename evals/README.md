@@ -83,3 +83,60 @@ so the cross-model tail comparison carries run-order bias. Re-run with models
 treating the small-vs-large tail difference as settled.
 
 Artifacts: `results/embedding_latency_20260705T173204Z.csv` and `.png`.
+
+## Eval 2 — Hybrid retrieval (vector + FTS + RRF) latency (CHO-17)
+
+**Question:** where does the latency of RRF-only hybrid retrieval over `kb_faq`
+(~1,102 rows, `vector(1536)`, local Postgres) actually go? Three passes: (A) pure
+retrieval with the query set embedded once and reused, (B) end-to-end with live
+embed, (C) RRF under concurrency. Read-only. RRF-only — no re-ranker.
+
+```bash
+python -m evals.retrieval.benchmark_retrieval --dry-run   # wiring check
+python -m evals.retrieval.benchmark_retrieval             # full run
+```
+
+Requires `DATABASE_URL` (+ `PGPASSWORD`) and `OPENAI_API_KEY` in `.env`. Outputs a
+timestamped CSV, a stage-breakdown + concurrency plot, and the captured
+`EXPLAIN ANALYZE` plan under `evals/retrieval/results/`.
+
+### Findings — first full run (2026-07-06 UTC)
+
+100 queries sampled from `kb_faq.question`, 100 trials/arm. p50 / p95 / p99 (ms):
+
+| pass | arm | p50 | p95 | p99 | q/s |
+|---|---|---|---|---|---|
+| A pure | vector | 51.9 | 76.4 | 96.7 | 18.0 |
+| A pure | fts | 59.2 | 131.3 | 201.8 | 13.9 |
+| A pure | rrf | 55.1 | 76.4 | 120.8 | 17.6 |
+| B e2e | embed+rrf | 352.9 | 871.6 | 4361.1 | 1.8 |
+| C conc=10 | rrf | 67.1 | 222.5 | 240.1 | 96.9 |
+| C conc=25 | rrf | 111.3 | 1110.6 | 1113.3 | 81.4 |
+
+1. **Seq scan confirmed, and it's fast — server-side ~5.5 ms, exact** (from the
+   captured `EXPLAIN ANALYZE`). HNSW never engaged; correct at this scale.
+2. **Correction to the prediction: retrieval from Python is ~50 ms p50, not
+   ~8–12 ms.** The seq scan is ~6 ms server-side; the extra ~45 ms is
+   **client-side** — shipping the 1536-dim query vector as a ~15 KB *text* literal
+   + round-trip + asyncpg parsing, every call. **Actionable:** register an asyncpg
+   binary `vector` codec (or prepared statements) to cut most of that overhead if
+   retrieval latency ever matters.
+3. **RRF fusion is free** — `rrf` (55 ms) ≈ `vector` (52 ms). The FULL OUTER JOIN
+   over two ~50-row lists adds nothing. `fts` is slightly slower with a fatter
+   tail (p99 202 ms).
+4. **End-to-end is dominated by the embed** — ~300 ms of the 353 ms p50 (~85%),
+   with a brutal tail (p99 4.4 s). Reaffirms CHO-16: the query embed is the lever,
+   and a query-embed cache is the real optimization — not anything in the DB.
+5. **Concurrency: local PG scales to ~97 q/s at concurrency 10** (p99 240 ms),
+   then saturates — at 25 concurrent, throughput *drops* to 81 q/s and p99 blows
+   to ~1.1 s. Each query is a CPU-bound seq scan, so concurrency competes for
+   cores. Keep effective retrieval concurrency ≤ ~10.
+
+**Implications**
+- Retrieval infra is fast but not *free* from Python (~50 ms), and most of that is
+  vector-literal serialization — fix with a binary codec if it matters.
+- The dominant latency lever remains the query embed (cache it).
+- Cap concurrent retrieval at ~10 for healthy tails.
+
+Artifacts: `results/retrieval_latency_20260705T192224Z.csv`, `.png`, and
+`results/retrieval_plan_20260705T192224Z.txt`.
