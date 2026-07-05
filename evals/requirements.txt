@@ -1,0 +1,5 @@
+# Eval-scoped dependencies (kept separate from the future app env).
+openai>=1.40
+tiktoken>=0.7
+python-dotenv>=1.0
+matplotlib>=3.8
