@@ -1,0 +1,7 @@
+# App-scoped dependencies for the CHO-20 support agent (kept separate from evals/).
+anthropic>=0.40
+openai>=1.40
+asyncpg>=0.29
+python-dotenv>=1.0
+fastapi>=0.110
+uvicorn[standard]>=0.29
